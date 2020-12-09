@@ -1,1 +1,1 @@
-body{background-image:url(../img/achtergrond.jpg);-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;background-position:50%}
+.parallax{background-image:url(../img/achtergrond.jpg);-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;background-position:50%;background-attachment:fixed;background-repeat:no-repeat;height:100vh}#navigatie{background-color:hsla(0,0%,100%,.8)}#navigatie a,#navigatie div{color:#000}

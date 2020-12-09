@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,24 +26,98 @@
 
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body class="vh-100">
 
-    <div class="container-fluid">
-        <div class="row  justify-content-center align-items-center vh-100">
-            <div class="col-lg-4 col-md-6 col-sm-8 col-12 ">
-                <div class="card mx-3 ">
-                    <div class="card-body">
+    <div class="parallax">
+        <nav class="navbar navbar-expand-lg navbar-light  fixed-top" id="navigatie">
 
-                        <h1 class="card-title">Welcome to my landing page</h1>
-                        <p>Hosted with github pages ;)</p> 
-                        <p>This page is still under development </p>
-                        <p>Extra line</p>   
+            <div class="flex-grow-1  d-lg-none">
+                <button class="navbar-toggler hidden-lg-up fle" type="button" data-toggle="collapse"
+                    data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                    aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            </div>
+
+            <div class="collapse navbar-collapse text-center text-left-lg flex-grow-1 order-last order-lg-0"
+                id="collapsibleNavId">
+                <ul class="navbar-nav  mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Overmezelf">About Me</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Projects</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownId">
+                            <a class="dropdown-item" href="#">Euroclear</a>
+                            <a class="dropdown-item" href="#">Cs50x - Intro to CS - Android Final Project</a>
+                            <a class="dropdown-item" href="#">Flynair Travel Website</a>
+                        </div>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+
+            </div>
+            <a class="navbar-brand flex-grow-1 flex-lg-grow-0 text-center text-lg-left mx-2" href="#parallaxtop"><img
+                    src="img/logo.png" width=35 alt="achtergrond" class=" img-fluid rounded-lg"></a>
+
+            <div class="navbar-text flex-grow-1 text-right flex-lg-grow-0 mx-2"><small>Kevin Vanaerschodt</small></a>
+        </nav>
+
+        <div class="container-fluid vh-100" id="parallaxtop">
+            <div class="row h-100  justify-content-center align-items-center">
+                <div class="col-lg-4 col-md-6 col-sm-8 col-12 ">
+                    <div class="card mx-3 ">
+                        <div class="card-body">
+
+                            <h1 class="card-title">Welcome to my landing page</h1>
+                            <p>Hosted with github pages ;)</p>
+                            <p>This page is still under development </p>
+                            <p>Extra line</p>
+
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+
+        <div class="container-lg  text-dark" id="Overmezelf">
+            <div class="card border-0 m-3">
+                <img class="card-img-top" src="holder.js/100px180/" alt="">
+                <div class="card-body">
+                    <h1 class="card-title">About me</h1>
+                    <article class="card-text">
+                        <p>
+                            I'm a Web/Mobile app developer living in Aarschot and I'm currently in training as a hybrid
+                            app developer until April 2021. In this course we will learn the basic front-end
+                            technologies such as Bootstrap, Html, Css, Sass and javascript. Later we will learn to use
+                            Angular, Ionic framework and connecting to Firebase.
+                            I'm looking for a job where I can develop my experience these technologies.
+                        </p>
+                        <p>
+
+                            I have prior experience in building complex websites and applications in a .NET environment.
+                            I have 3 years professional experience working with C#, VB.NET, SQL Server and basic
+                            front-end stack (HTML, CSS, JavaScript/Jquery).
+                        </p>
+                        <p>
+                            In a part of my free time, I develop new skills or learn new technologies such as Mobile
+                            development, Machine Learning and AI, fiddle around on my Raspberry Pi, ...
+                        </p>
+                        <p>
+                            My hobbies are theatre, futsal (goalkeeper), cycling and casual gaming.
+                        </p>
+
+                    </article>
+                </div>
+            </div>
+
+        </div>
     </div>
-    <div></div>
-    
 </body>
+
 </html>

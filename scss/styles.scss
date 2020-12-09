@@ -1,9 +1,22 @@
 
-
-body{
+.parallax{
     background-image: url(../img/achtergrond.jpg);
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+#navigatie{
+    background-color: rgba(255, 255, 255, 0.8);
+    
+}
+
+#navigatie a,
+#navigatie div
+{
+    color: black;
 }
 
 
