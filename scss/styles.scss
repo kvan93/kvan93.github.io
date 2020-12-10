@@ -1,3 +1,9 @@
+$oxford_blue: #0A1128;
+$Royal_blue_dark: #001F54;
+$Indigo_dye: #034078;
+$CG_blue: #1282A2;
+$white: #FEFCFB;
+
 
 .parallax{
     background-image: url(../img/achtergrond.jpg);
@@ -9,15 +15,22 @@
 }
 
 #navigatie{
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: $oxford_blue;
     
 }
 
-#navigatie a,
+#navigatie li>a,
 #navigatie div
 {
-    color: black;
+    color: $white;
 }
 
+h1{
+    color: $CG_blue;
+}
+
+span.navbar-toggler-icon{
+    color: #FEFCFB !important;
+}
 
 
