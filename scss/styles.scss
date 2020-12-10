@@ -5,7 +5,7 @@ $CG_blue: #1282A2;
 $white: #FEFCFB;
 
 
-.parallax{
+.parallax {
     background-image: url(../img/achtergrond.jpg);
     background-size: cover;
     background-position: center;
@@ -14,23 +14,25 @@ $white: #FEFCFB;
     height: 100vh;
 }
 
-#navigatie{
+#navigatie {
     background-color: $oxford_blue;
-    
+
+    li>a,
+    div {
+        color: $white;
+    }
+
 }
 
-#navigatie li>a,
-#navigatie div
-{
-    color: $white;
-}
-
-h1{
+h1 {
     color: $CG_blue;
 }
 
-span.navbar-toggler-icon{
+span.navbar-toggler-icon {
     color: #FEFCFB !important;
 }
 
-
+footer{
+    background-color: $oxford_blue;
+    color: white;
+}
