@@ -4,7 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kevin Vanaerschodt</title>
+    <meta name="author" content="Kevin Vanaerschodt">
+    <meta name="keywords" content="Kevin Vanaerschodt, portfolio, website, Web developer, Mobile developer">
+    <title>Kevin Vanaerschodt -- Website</title>
+
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/site.webmanifest">
 
     <!--Bootstrap-->
 
@@ -28,10 +36,10 @@
 
     </script>
 
-        <!--Eigen Css-->
+    <!--Eigen Css-->
 
 
-    <link rel="stylesheet" href="css/styles.css?v=4">
+    <link rel="stylesheet" href="css/styles.css?v=5">
 </head>
 
 <body class="vh-100">
@@ -58,12 +66,12 @@
                         <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">Projects</a>
                         <div class="dropdown-menu text-dark" aria-labelledby="dropdownId">
-                            <a class="dropdown-item" href="#">Euroclear</a>
+                            <a class="dropdown-item" data-toggle="modal" data-target="#constructionModal">Euroclear</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Cs50x - Intro to CS - Android Final Project</a>
+                            <a class="dropdown-item" data-toggle="modal" data-target="#constructionModal">Cs50x - Intro to CS - Android Final Project</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Flynair Travel Website</a>
-                            <a class="dropdown-item" href="#">Portfolio website</a>
+                            <a class="dropdown-item" data-toggle="modal" data-target="#constructionModal">Flynair Travel Website</a>
+                            <a class="dropdown-item" data-toggle="modal" data-target="#constructionModal">Portfolio website</a>
 
                         </div>
                     </li>
@@ -86,35 +94,38 @@
                         <div class="card-body text-center">
                             <h1 class="card-title d-none d-md-block">Kevin Vanaerschodt</h1>
                             <h3 class="card-title d-block d-md-none">Kevin Vanaerschodt</h2>
-                            <p>Front-end & Mobile developer </p>                    
+                                <p>Front-end & Mobile developer </p>
                         </div>
 
                         <div class="card-body text-center border-top border-bottom pb-5">
-                            <h3 class="card-title">Skills</h3>                           
+                            <h3 class="card-title">Skills</h3>
                             <div class="container-fluid">
-                                <div class="row" >
+                                <div class="row">
                                     <div class="col-12 text-center ">
-                                        <i class="fab fa-html5 fa-2x mx-2 shadow-lg" data-toggle="tooltip" data-placement="bottom" title="HTML5"></i>
-                                        <i class="fab fa-css3-alt fa-2x mx-2" data-toggle="tooltip" data-placement="bottom" title="CSS3"></i>
-                                        <i class="fab fa-bootstrap fa-2x mx-2" data-toggle="tooltip" data-placement="bottom" title="Bootstrap"></i>
-                                        <i class="fab fa-sass fa-2x mx-2" data-toggle="tooltip" data-placement="bottom" title="SASS"></i>
-                                        <i class="fab fa-js-square fa-2x mx-2" data-toggle="tooltip" data-placement="bottom" title="Javascript"></i>                                      
-                                        <i class="fab fa-gulp fa-2x mx-2" data-toggle="tooltip" data-placement="bottom" title="Gulp"></i>
-
+                                        <i class="fab fa-html5 fa-2x mx-2 shadow-lg" data-toggle="tooltip"
+                                            data-placement="bottom" title="HTML5"></i>
+                                        <i class="fab fa-css3-alt fa-2x mx-2" data-toggle="tooltip"
+                                            data-placement="bottom" title="CSS3"></i>
+                                        <i class="fab fa-bootstrap fa-2x mx-2" data-toggle="tooltip"
+                                            data-placement="bottom" title="Bootstrap"></i>
+                                        <i class="fab fa-sass fa-2x mx-2" data-toggle="tooltip" data-placement="bottom"
+                                            title="SASS"></i>
+                                        <i class="fab fa-js-square fa-2x mx-2" data-toggle="tooltip"
+                                            data-placement="bottom" title="Javascript"></i>
+                                        <i class="fab fa-gulp fa-2x mx-2" data-toggle="tooltip" data-placement="bottom"
+                                            title="Gulp"></i>
                                     </div>
                                 </div>
-
                             </div>
                         </div>
 
                         <div class="card-body d-flex justify-content-center">
-                            <a href="file/CV_Kevin_Vanaerschodt.pdf" target="_blank" class="btn btn-outline-dark mx-2">CV</a>
-                            <a href="mailto:kevin.vanaerschodt@gmail.com" target="_blank" class="btn btn-outline-dark mx-2">Email me</a>
+                            <a href="file/CV_Kevin_Vanaerschodt.pdf" target="_blank"
+                                class="btn btn-outline-dark mx-2">CV</a>
+                            <a href="mailto:kevin.vanaerschodt@gmail.com" target="_blank"
+                                class="btn btn-outline-dark mx-2">Email me</a>
 
                         </div>
-
-                       
-
                     </div>
                 </div>
             </div>
@@ -122,7 +133,7 @@
 
         <div class="container-lg  text-dark" id="Overmezelf">
             <div class="card border-0 m-5">
-        
+
                 <div class="card-body">
                     <article class="card-text text-md-left text-justify">
                         <h1 class="card-title">About me</h1>
@@ -150,7 +161,21 @@
                     </article>
                 </div>
             </div>
+        </div>
 
+        <div class="modal fade" id="constructionModal" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+
+                    </div>
+
+                </div>
+            </div>
         </div>
 
         <footer id="contact">
@@ -173,10 +198,11 @@
                     </div>
                     <div class="col-12 col-lg-6 py-5 text-center">
                         <h2>Contact Me</h2>
-                        <a href="mailto:kevin.vanaerschodt@gmail.com" target="_blank" class="btn btn-outline-light">Email me</a>
+                        <a href="mailto:kevin.vanaerschodt@gmail.com" target="_blank"
+                            class="btn btn-outline-light">Email me</a>
                     </div>
-                </div>             
-               
+                </div>
+
 
                 <div class="row">
                     <div class="col-12 text-center">

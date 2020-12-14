@@ -24,7 +24,8 @@ $white: #FEFCFB;
 
 }
 
-h1, h3 {
+h1,
+h3 {
     color: $CG_blue;
 }
 
@@ -32,24 +33,41 @@ span.navbar-toggler-icon {
     color: #FEFCFB !important;
 }
 
-footer{
+footer {
     background-color: $oxford_blue;
     color: white;
 }
 
-div.card#ProfielCard{
+div.card#ProfielCard {
     border: none;
-    background-color: rgba($color: $white , $alpha: 1);
+    background-color: rgba($color: $white, $alpha: 1);
     color: black;
-   
-      
-    
 
-    div.border-bottom{
+    div.border-bottom {
         border-bottom: 2px solid $CG_blue !important
     }
 
-    div.border-top{
+    div.border-top {
         border-top: 2px solid $CG_blue !important
+    }
+}
+
+div#constructionModal {
+
+    div.modal-content{
+      
+        height: 400px;
+    }
+
+    div.modal-body {
+        
+        background-image: url(/img/constuction.jpg);
+        background-position: center;
+        background-size: cover;
+
+        button.close{
+            color: $white;
+            text-shadow: 0 1px 0 $oxford_blue;
+        }
     }
 }
