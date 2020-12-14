@@ -22,7 +22,14 @@
         integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
         crossorigin="anonymous" />
 
-    <!--Eigen Css-->
+    <!--Eigen js-->
+
+    <script src="js/script.js?v=1">
+
+    </script>
+
+        <!--Eigen Css-->
+
 
     <link rel="stylesheet" href="css/styles.css?v=4">
 </head>
@@ -69,29 +76,30 @@
             <a class="navbar-brand flex-grow-1 flex-lg-grow-0 text-center text-lg-left mx-2" href="#parallaxtop"><img
                     src="img/logo_wit.png" width=35 alt="achtergrond" class=" img-fluid rounded-lg"></a>
 
-            <div class="navbar-text flex-grow-1 text-right flex-lg-grow-0 mx-2"><small>Kevin Vanaerschodt</small></a>
+            <div class="navbar-text flex-grow-1 text-right flex-lg-grow-0 mx-2"><small>Kevin Vanaerschodt</small></div>
         </nav>
 
         <div class="container-fluid vh-100" id="parallaxtop">
             <div class="row h-100  justify-content-center align-items-center">
                 <div class="col-lg-4 col-md-6 col-sm-8 col-12 ">
-                    <div class="card mx-3 " id="ProfielCard">
+                    <div class="card mx-3 rounded-lg" id="ProfielCard">
                         <div class="card-body text-center">
-                            <h1 class="card-title">Kevin Vanaerschodt</h1>
+                            <h1 class="card-title d-none d-md-block">Kevin Vanaerschodt</h1>
+                            <h3 class="card-title d-block d-md-none">Kevin Vanaerschodt</h2>
                             <p>Front-end & Mobile developer </p>                    
                         </div>
 
-                        <div class="card-body text-left">
+                        <div class="card-body text-center border-top border-bottom pb-5">
                             <h3 class="card-title">Skills</h3>                           
                             <div class="container-fluid">
                                 <div class="row" >
                                     <div class="col-12 text-center ">
-                                        <i class="fab fa-html5 fa-2x mx-2"></i>
-                                        <i class="fab fa-css3-alt fa-2x mx-2"></i>
-                                        <i class="fab fa-bootstrap fa-2x mx-2"></i>
-                                        <i class="fab fa-sass fa-2x mx-2"></i>
-                                        <i class="fab fa-js-square fa-2x mx-2"></i>                                      
-                                        <i class="fab fa-gulp fa-2x mx-2"></i>
+                                        <i class="fab fa-html5 fa-2x mx-2 shadow-lg" data-toggle="tooltip" data-placement="bottom" title="HTML5"></i>
+                                        <i class="fab fa-css3-alt fa-2x mx-2" data-toggle="tooltip" data-placement="bottom" title="CSS3"></i>
+                                        <i class="fab fa-bootstrap fa-2x mx-2" data-toggle="tooltip" data-placement="bottom" title="Bootstrap"></i>
+                                        <i class="fab fa-sass fa-2x mx-2" data-toggle="tooltip" data-placement="bottom" title="SASS"></i>
+                                        <i class="fab fa-js-square fa-2x mx-2" data-toggle="tooltip" data-placement="bottom" title="Javascript"></i>                                      
+                                        <i class="fab fa-gulp fa-2x mx-2" data-toggle="tooltip" data-placement="bottom" title="Gulp"></i>
 
                                     </div>
                                 </div>
@@ -99,7 +107,13 @@
                             </div>
                         </div>
 
-                        <img class="card-img-bottom d-none d-sm-block" src="img/profiel_foto.JPG" alt="profiel">
+                        <div class="card-body d-flex justify-content-center">
+                            <a href="file/CV_Kevin_Vanaerschodt.pdf" target="_blank" class="btn btn-outline-dark mx-2">CV</a>
+                            <a href="mailto:kevin.vanaerschodt@gmail.com" target="_blank" class="btn btn-outline-dark mx-2">Email me</a>
+
+                        </div>
+
+                       
 
                     </div>
                 </div>
@@ -107,11 +121,11 @@
         </div>
 
         <div class="container-lg  text-dark" id="Overmezelf">
-            <div class="card border-0 m-3">
-                <img class="card-img-top" src="holder.js/100px180/" alt="">
+            <div class="card border-0 m-5">
+        
                 <div class="card-body">
-                    <h1 class="card-title">About me</h1>
                     <article class="card-text text-md-left text-justify">
+                        <h1 class="card-title">About me</h1>
                         <p>
                             I'm a Web/Mobile app developer living in Aarschot and I'm currently in training as a hybrid
                             app developer until April 2021. In this course we will learn the basic front-end

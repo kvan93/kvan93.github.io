@@ -39,6 +39,17 @@ footer{
 
 div.card#ProfielCard{
     border: none;
-    background-color: rgba($color: $Royal_blue_dark , $alpha: 1);
-    color: $white;
+    background-color: rgba($color: $white , $alpha: 1);
+    color: black;
+   
+      
+    
+
+    div.border-bottom{
+        border-bottom: 2px solid $CG_blue !important
+    }
+
+    div.border-top{
+        border-top: 2px solid $CG_blue !important
+    }
 }
