@@ -4,9 +4,9 @@ $Indigo_dye: #034078;
 $CG_blue: #1282A2;
 $white: #FEFCFB;
 
-body{
-    font-family: 'Playfair Display', serif; 
-    font-size: 20px;
+body {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
 }
 
 .parallax {
@@ -16,20 +16,37 @@ body{
     background-attachment: fixed;
     background-repeat: no-repeat;
     height: 100vh;
+    
 }
 
-.transparent_parallax{
+.transparent_parallax {
     background-color: rgba(0, 0, 0, 0.6);
+    position: relative;
+
+    #downicon {
+        position: absolute;
+        left: 50%;
+        color: white;
+        bottom: 0;
+        margin: 0 auto;
+        margin-bottom: 30px;
+        width: 30px;
+        height: 30px;
+
+        &:hover i.bounce-top {
+            animation: bounce-top 1.5s both ease-in;
+        }
+    }
 }
 
-div#cardcontainer{
+div#cardcontainer {
     margin-bottom: 70px;
 }
 
 
 
 #navigatie {
-    
+
 
     li>a,
     div {
@@ -65,30 +82,31 @@ div.card#ProfielCard {
         border-top: 2px solid $CG_blue !important
     }
 
-    a.btn-outline-dark{
+    a.btn-outline-dark {
         border-color: $CG_blue;
-        &:hover{
+
+        &:hover {
             background-color: $Indigo_dye;
         }
-       
+
     }
 
 }
 
 div#constructionModal {
 
-    div.modal-content{
-      
+    div.modal-content {
+
         height: 400px;
     }
 
     div.modal-body {
-        
+
         background-image: url(/img/constuction.jpg);
         background-position: center;
         background-size: cover;
 
-        button.close{
+        button.close {
             color: $white;
             text-shadow: 0 1px 0 $oxford_blue;
         }
