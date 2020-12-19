@@ -30,6 +30,10 @@
         integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
         crossorigin="anonymous" />
 
+    <!-- Google Font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
     <!--Eigen js-->
 
     <script src="js/script.js?v=1">
@@ -39,180 +43,273 @@
     <!--Eigen Css-->
 
 
-    <link rel="stylesheet" href="css/styles.css?v=5">
+    <link rel="stylesheet" href="css/styles.css?v=6">
 </head>
 
 <body class="vh-100">
 
     <div class="parallax">
-        <nav class="navbar navbar-expand-lg navbar-dark  fixed-top" id="navigatie">
+        <div class="h-100 w-100 transparent_parallax ">
 
-            <div class="flex-grow-1  d-lg-none">
-                <button class="navbar-toggler hidden-lg-up fle" type="button" data-toggle="collapse"
-                    data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
-                    aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-            </div>
 
-            <div class="collapse navbar-collapse text-center text-left-lg flex-grow-1 order-last order-lg-0"
-                id="collapsibleNavId">
-                <ul class="navbar-nav  mt-2 mt-lg-0">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#Overmezelf">About Me</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">Projects</a>
-                        <div class="dropdown-menu text-dark" aria-labelledby="dropdownId">
-                            <a class="dropdown-item" data-toggle="modal" data-target="#constructionModal">Euroclear</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" data-toggle="modal" data-target="#constructionModal">Cs50x - Intro to CS - Android Final Project</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" data-toggle="modal" data-target="#constructionModal">Flynair Travel Website</a>
-                            <a class="dropdown-item" data-toggle="modal" data-target="#constructionModal">Portfolio website</a>
+            <nav class="navbar navbar-expand-lg navbar-dark  bg-transparent sticky-top " id="navigatie">
 
-                        </div>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                </ul>
+                <div class="flex-grow-1 d-none d-md-inline-block d-lg-none">
+                    <button class="navbar-toggler hidden-lg-up fle" type="button" data-toggle="collapse"
+                        data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                        aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                </div>
 
-            </div>
-            <a class="navbar-brand flex-grow-1 flex-lg-grow-0 text-center text-lg-left mx-2" href="#parallaxtop"><img
-                    src="img/logo_wit.png" width=35 alt="achtergrond" class=" img-fluid rounded-lg"></a>
+                <div class="collapse navbar-collapse text-center text-left-lg flex-grow-1 order-last order-lg-0"
+                    id="collapsibleNavId">
+                    <ul class="navbar-nav  mt-2 mt-lg-0">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Overmezelf">About Me</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">Projects</a>
+                            <div class="dropdown-menu text-dark" aria-labelledby="dropdownId">
+                                <a class="dropdown-item" data-toggle="modal"
+                                    data-target="#constructionModal">Euroclear</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" data-toggle="modal" data-target="#constructionModal">Cs50x -
+                                    Intro to CS - Android Final Project</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" data-toggle="modal" data-target="#constructionModal">Flynair
+                                    Travel Website</a>
+                                <a class="dropdown-item" data-toggle="modal" data-target="#constructionModal">Portfolio
+                                    website</a>
 
-            <div class="navbar-text flex-grow-1 text-right flex-lg-grow-0 mx-2"><small>Kevin Vanaerschodt</small></div>
-        </nav>
+                            </div>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
 
-        <div class="container-fluid vh-100" id="parallaxtop">
-            <div class="row h-100  justify-content-center align-items-center">
-                <div class="col-lg-4 col-md-6 col-sm-8 col-12 ">
-                    <div class="card mx-3 rounded-lg" id="ProfielCard">
-                        <div class="card-body text-center">
-                            <h1 class="card-title d-none d-md-block">Kevin Vanaerschodt</h1>
-                            <h3 class="card-title d-block d-md-none">Kevin Vanaerschodt</h2>
+                </div>
+                <a class="navbar-brand  flex-lg-grow-0 d-none d-md-inline-block text-center text-lg-left mx-2"
+                    href="#parallaxtop"><img src="img/logo_wit.png" width=35 alt="achtergrond"
+                        class=" img-fluid rounded-lg"></a>
+
+                <div class="d-none d-lg-inline-block navbar-text flex-grow-1 text-right flex-lg-grow-0 mx-2"><i>Kevin
+                        Vanaerschodt</i>
+                </div>
+            </nav>
+
+            <div class="container-fluid vh-100 " id="parallaxtop">
+                <div class="row h-100  justify-content-center align-items-center">
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-8 col-12" id="cardcontainer">
+                        <div class="card mx-3 rounded-lg " id="ProfielCard">
+                            <div class="card-body text-center">
+                                <h1 class="card-title d-none d-lg-block">Kevin Vanaerschodt</h1>
+                                <h4 class="card-title d-block d-lg-none">Kevin Vanaerschodt</h4>
                                 <p>Front-end & Mobile developer </p>
-                        </div>
+                            </div>
 
-                        <div class="card-body text-center border-top border-bottom pb-5">
-                            <h3 class="card-title">Skills</h3>
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-12 text-center ">
-                                        <i class="fab fa-html5 fa-2x mx-2 shadow-lg" data-toggle="tooltip"
-                                            data-placement="bottom" title="HTML5"></i>
-                                        <i class="fab fa-css3-alt fa-2x mx-2" data-toggle="tooltip"
-                                            data-placement="bottom" title="CSS3"></i>
-                                        <i class="fab fa-bootstrap fa-2x mx-2" data-toggle="tooltip"
-                                            data-placement="bottom" title="Bootstrap"></i>
-                                        <i class="fab fa-sass fa-2x mx-2" data-toggle="tooltip" data-placement="bottom"
-                                            title="SASS"></i>
-                                        <i class="fab fa-js-square fa-2x mx-2" data-toggle="tooltip"
-                                            data-placement="bottom" title="Javascript"></i>
-                                        <i class="fab fa-gulp fa-2x mx-2" data-toggle="tooltip" data-placement="bottom"
-                                            title="Gulp"></i>
+                            <div class="card-body text-center border-top border-bottom pb-5">
+                                <h4 class="card-title">Skills</h4>
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-12 text-center ">
+                                            <i class="fab fa-html5 fa-2x mx-2 shadow-lg" data-toggle="tooltip"
+                                                data-placement="bottom" title="HTML5"></i>
+                                            <i class="fab fa-css3-alt fa-2x mx-2" data-toggle="tooltip"
+                                                data-placement="bottom" title="CSS3"></i>
+                                            <i class="fab fa-bootstrap fa-2x mx-2" data-toggle="tooltip"
+                                                data-placement="bottom" title="Bootstrap"></i>
+                                            <i class="fab fa-sass fa-2x mx-2" data-toggle="tooltip"
+                                                data-placement="bottom" title="SASS"></i>
+                                            <i class="fab fa-js-square fa-2x mx-2" data-toggle="tooltip"
+                                                data-placement="bottom" title="Javascript"></i>
+                                            <i class="fab fa-gulp fa-2x mx-2" data-toggle="tooltip"
+                                                data-placement="bottom" title="Gulp"></i>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+
+                            <div class="card-body  ">
+
+                                <div class="row">
+
+                                    <div class="col-12 col-sm-6 text-center my-2">
+                                        <a href="file/CV_Kevin_Vanaerschodt.pdf" target="_blank"
+                                            class="btn btn-outline-dark rounded-pill mx-2 px-4">CV</a>
+                                    </div>
+                                    <div class="col-12 col-sm-6 text-center my-2">
+                                        <a href="mailto:kevin.vanaerschodt@gmail.com" target="_blank"
+                                        class="btn btn-outline-dark mx-2 px-4 rounded-pill">E-mail</a>
+                                    </div>
+                                    
+                                </div>
+
+
+
+
+                            </div>
+                            <div class="card-body d-block d-md-none border-top">
+
+                                <div class="row ">
+                                    <div class="col-12 col-sm-6 text-center my-2">
+                                        <a href="file/CV_Kevin_Vanaerschodt.pdf" target="_blank"
+                                            class="btn btn-outline-dark rounded-pill px-4 ">About</a>
+                                    </div>
+                                    <div class="col-12 col-sm-6 text-center my-2">
+                                        <a href="file/CV_Kevin_Vanaerschodt.pdf" target="_blank"
+                                            class="btn btn-outline-dark rounded-pill   px-4">Projects</a>
+                                    </div>
+
+                                    <div class="col-12 text-center my-2 ">
+
+                                        <a href="file/CV_Kevin_Vanaerschodt.pdf" target="_blank"
+                                            class="btn btn-outline-dark rounded-pill  px-4">Contact</a>
+                                    </div>
+                                </div>
+
+
+
+                            </div>
                         </div>
-
-                        <div class="card-body d-flex justify-content-center">
-                            <a href="file/CV_Kevin_Vanaerschodt.pdf" target="_blank"
-                                class="btn btn-outline-dark mx-2">CV</a>
-                            <a href="mailto:kevin.vanaerschodt@gmail.com" target="_blank"
-                                class="btn btn-outline-dark mx-2">Email me</a>
-
-                        </div>
                     </div>
                 </div>
             </div>
+
         </div>
 
-        <div class="container-lg  text-dark" id="Overmezelf">
-            <div class="card border-0 m-5">
-
-                <div class="card-body">
-                    <article class="card-text text-md-left text-justify">
-                        <h1 class="card-title">About me</h1>
-                        <p>
-                            I'm a Web/Mobile app developer living in Aarschot and I'm currently in training as a hybrid
-                            app developer until April 2021. In this course we will learn the basic front-end
-                            technologies such as Bootstrap, Html, Css, Sass and javascript. Later we will learn to use
-                            Angular, Ionic framework and connecting to Firebase.
-                            I'm looking for a job where I can develop my experience these technologies.
-                        </p>
-                        <p>
-
-                            I have prior experience in building complex websites and applications in a .NET environment.
-                            I have 3 years professional experience working with C#, VB.NET, SQL Server and basic
-                            front-end stack (HTML, CSS, JavaScript/Jquery).
-                        </p>
-                        <p>
-                            In a part of my free time, I develop new skills or learn new technologies such as Mobile
-                            development, Machine Learning and AI, fiddle around on my Raspberry Pi, ...
-                        </p>
-                        <p>
-                            My hobbies are theatre, futsal (goalkeeper), cycling and casual gaming.
-                        </p>
-
-                    </article>
-                </div>
-            </div>
-        </div>
-
-        <div class="modal fade" id="constructionModal" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                          </button>
-
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-        <footer id="contact">
-            <div class="container-fluid">
-                <div class="row py-lg-5">
-                    <div class="col-12 col-lg-6 text-center py-5">
-                        <h2 class="mb-3"> Social Media </h2>
-                        <nav class="d-flex flex-row justify-content-center ">
-                            <a href="https://www.facebook.com/kevin.vanaerschodt/" class=" text-light mx-3"
-                                target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
-                            <a href="https://www.linkedin.com/in/kevin-vanaerschodt/" class=" text-light mx-3"><i
-                                    class="fab fa-linkedin fa-2x"></i></a>
-                            <a href="https://github.com/kvan93" class=" text-light mx-3"><i
-                                    class="fab fa-github fa-2x"></i></a>
-                            <a href="https://twitter.com/sionyx93" target="_blank" class="text-light mx-3"><i
-                                    class="fab fa-twitter fa-2x"></i></a>
-                            <a href="https://discordapp.com/users/771284741403836416" class=" text-light mx-3"><i
-                                    class="fab fa-discord fa-2x"></i></a>
-                        </nav>
-                    </div>
-                    <div class="col-12 col-lg-6 py-5 text-center">
-                        <h2>Contact Me</h2>
-                        <a href="mailto:kevin.vanaerschodt@gmail.com" target="_blank"
-                            class="btn btn-outline-light">Email me</a>
-                    </div>
-                </div>
-
-
-                <div class="row">
-                    <div class="col-12 text-center">
-                        <p>&copy; 2020 - Kevin Vanaerschodt</p>
-                    </div>
-                </div>
-
-            </div>
-        </footer>
     </div>
+
+    <div class="container-lg  text-dark" id="Overmezelf">
+        <div class="card border-0 m-5">
+
+            <div class="card-body">
+                <article class="card-text text-md-left text-justify">
+                    <h1 class="card-title">About me</h1>
+                    <p>
+                        I'm a Web/Mobile app developer living in Aarschot and I'm currently in training as a hybrid
+                        app developer until April 2021. In this course we will learn the basic front-end
+                        technologies such as Bootstrap, Html, Css, Sass and javascript. Later we will learn to use
+                        Angular, Ionic framework and connecting to Firebase.
+                        I'm looking for a job where I can develop my experience these technologies.
+                    </p>
+                    <p>
+
+                        I have prior experience in building complex websites and applications in a .NET environment.
+                        I have 3 years professional experience working with C#, VB.NET, SQL Server and basic
+                        front-end stack (HTML, CSS, JavaScript/Jquery).
+                    </p>
+                    <p>
+                        In a part of my free time, I develop new skills or learn new technologies such as Mobile
+                        development, Machine Learning and AI, fiddle around on my Raspberry Pi, ...
+                    </p>
+                    <p>
+                        My hobbies are theatre, futsal (goalkeeper), cycling and casual gaming.
+                    </p>
+
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores inventore harum hic
+                        temporibus quia, est vitae aliquam ea facere accusamus voluptate corporis repellendus magnam!
+                        Facere ducimus, sit similique voluptates hic tenetur officiis commodi, delectus quaerat
+                        aspernatur cumque! Voluptates assumenda cupiditate optio deleniti sed distinctio! Excepturi
+                        accusantium nemo reprehenderit tenetur quod laboriosam sit tempora perferendis temporibus non,
+                        commodi iure cupiditate. Et recusandae at ex ullam! Deleniti eveniet tempora obcaecati eum
+                        possimus maiores nemo fuga non nam voluptatem. Provident reiciendis asperiores laboriosam
+                        architecto dignissimos fugit doloremque praesentium in quas, dolore labore eum vel adipisci unde
+                        quae dolores enim necessitatibus tempora, amet id dolor explicabo. Placeat impedit deleniti quae
+                        fugit aut culpa eius dignissimos quidem? Blanditiis doloremque, explicabo non veniam deleniti
+                        quis eligendi repellendus assumenda ut minima voluptates nesciunt quo quos aliquid. Deleniti
+                        ratione, deserunt sed obcaecati aut illum impedit odio minus ducimus earum quam ullam laboriosam
+                        sint doloremque magni enim assumenda aliquid reiciendis officiis! Aperiam nesciunt aliquid fuga,
+                        libero autem iusto natus consectetur debitis! Asperiores ea culpa, eos recusandae fuga officia
+                        totam aut qui. Asperiores assumenda quas, consectetur, impedit dignissimos consequatur aliquam
+                        numquam enim ab error exercitationem fuga, pariatur atque aperiam deleniti fugit neque unde
+                        autem ex expedita velit! Quisquam facilis debitis vel ut voluptatum assumenda dicta eos
+                        molestias. Minus, error adipisci ut amet in sed velit numquam hic atque ipsa iusto
+                        necessitatibus. Explicabo amet, reprehenderit veritatis temporibus, voluptas ducimus labore
+                        nulla necessitatibus aut qui architecto aspernatur maiores sint laudantium est inventore quasi
+                        nisi, eaque distinctio nihil numquam illum? Nobis vero vitae quod rem repudiandae, fuga incidunt
+                        minus amet quis earum alias quasi quia nemo labore et numquam magni perspiciatis quaerat neque
+                        suscipit? Hic ad eum quia illo at quasi, consectetur nulla culpa architecto non possimus,
+                        accusantium blanditiis optio? Non nulla porro officiis. Rerum reiciendis nisi aliquid dolorem
+                        reprehenderit officia explicabo nulla adipisci a beatae voluptatibus sapiente delectus
+                        accusantium, quo rem unde voluptate doloribus, porro sint. Minus laboriosam labore non deserunt
+                        quis temporibus qui odit quas repudiandae cum velit sint odio officiis, voluptatem aliquam
+                        perferendis facilis excepturi sunt blanditiis soluta consequuntur debitis reprehenderit! Saepe
+                        sequi fugiat magnam corporis ab nostrum voluptates natus dignissimos. Molestiae maxime
+                        reiciendis ex recusandae, alias quam ullam facere rerum quasi tempora mollitia officia
+                        consequatur quas vero numquam itaque illo earum accusantium temporibus eius odio assumenda
+                        ducimus minus quia? In eius delectus, at perferendis laudantium officiis repellat atque
+                        necessitatibus consequatur incidunt iste assumenda sit voluptatum. Quibusdam ea quisquam magni
+                        reiciendis dolorum obcaecati inventore delectus beatae, ipsa, labore amet ab vitae laudantium
+                        similique? Inventore dignissimos sunt aperiam voluptatum ab sit at. Alias laboriosam nesciunt
+                        officia ad. Voluptas, praesentium quaerat nulla rem maiores laboriosam dolor architecto
+                        voluptates ex alias asperiores rerum nemo cumque illo itaque repellat non porro consequuntur
+                        fugit facilis similique dolores? Vitae perspiciatis autem facilis omnis quas exercitationem
+                        laudantium perferendis iure eum fugit vel nulla hic dolore aut, quis ipsam quidem et ea,
+                        adipisci rerum dolor accusamus! Optio quia consequuntur repellat obcaecati minus beatae
+                        asperiores, necessitatibus deleniti? Saepe quidem, quae dolorem aut ad asperiores error quas
+                        quod esse ratione?
+                    </p>
+
+                </article>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="constructionModal" data-backdrop="static" data-keyboard="false" tabindex="-1"
+        role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <footer id="contact">
+        <div class="container-fluid">
+            <div class="row py-lg-5">
+                <div class="col-12 col-lg-6 text-center py-5">
+                    <h2 class="mb-3"> Social Media </h2>
+                    <nav class="d-flex flex-row justify-content-center ">
+                        <a href="https://www.facebook.com/kevin.vanaerschodt/" class=" text-light mx-3"
+                            target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+                        <a href="https://www.linkedin.com/in/kevin-vanaerschodt/" class=" text-light mx-3"><i
+                                class="fab fa-linkedin fa-2x"></i></a>
+                        <a href="https://github.com/kvan93" class=" text-light mx-3"><i
+                                class="fab fa-github fa-2x"></i></a>
+                        <a href="https://twitter.com/sionyx93" target="_blank" class="text-light mx-3"><i
+                                class="fab fa-twitter fa-2x"></i></a>
+                        <a href="https://discordapp.com/users/771284741403836416" class=" text-light mx-3"><i
+                                class="fab fa-discord fa-2x"></i></a>
+                    </nav>
+                </div>
+                <div class="col-12 col-lg-6 py-5 text-center">
+                    <h2>Contact Me</h2>
+                    <a href="mailto:kevin.vanaerschodt@gmail.com" target="_blank" class="btn btn-outline-light">Email
+                        me</a>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p>&copy; 2020 - Kevin Vanaerschodt</p>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
 </body>
 
 </html>

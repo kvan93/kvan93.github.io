@@ -4,6 +4,10 @@ $Indigo_dye: #034078;
 $CG_blue: #1282A2;
 $white: #FEFCFB;
 
+body{
+    font-family: 'Playfair Display', serif; 
+    font-size: 20px;
+}
 
 .parallax {
     background-image: url(../img/achtergrond.jpg);
@@ -14,8 +18,18 @@ $white: #FEFCFB;
     height: 100vh;
 }
 
+.transparent_parallax{
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+div#cardcontainer{
+    margin-bottom: 70px;
+}
+
+
+
 #navigatie {
-    background-color: $oxford_blue;
+    
 
     li>a,
     div {
@@ -25,12 +39,12 @@ $white: #FEFCFB;
 }
 
 h1,
-h3 {
+h4 {
     color: $CG_blue;
 }
 
-span.navbar-toggler-icon {
-    color: #FEFCFB !important;
+span.navbar-toggler {
+    color: black !important;
 }
 
 footer {
@@ -50,6 +64,15 @@ div.card#ProfielCard {
     div.border-top {
         border-top: 2px solid $CG_blue !important
     }
+
+    a.btn-outline-dark{
+        border-color: $CG_blue;
+        &:hover{
+            background-color: $Indigo_dye;
+        }
+       
+    }
+
 }
 
 div#constructionModal {
