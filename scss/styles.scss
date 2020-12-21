@@ -1,3 +1,5 @@
+// Variabelen
+
 $oxford_blue: #0A1128;
 $Royal_blue_dark: #001F54;
 $Indigo_dye: #034078;
@@ -5,6 +7,20 @@ $CG_blue: #1282A2;
 $white: #FEFCFB;
 
 $border_custom: 15px;
+$breakpoint_small:576px;
+$breakpoint_medium:786px;
+$breakpoint_Large:992px;
+$breakpoint_xL:1200px;
+
+// Mixins
+@mixin import_image($image_url) {
+    background-image: url($image_url);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+// SASS
 
 body {
     font-family: 'Playfair Display', serif;
@@ -17,7 +33,7 @@ body {
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    height: 100vh;    
+    height: 100vh;
 }
 
 .transparent_parallax {
@@ -45,16 +61,27 @@ div#cardcontainer {
 }
 
 #navigatie {
+
     li>a,
     div {
         color: $white;
     }
 }
 
+
 h1,
 h2,
 h4 {
     color: $CG_blue;
+}
+
+#contact {
+
+    h1,
+    h2,
+    h4 {
+        color: $white;
+    }
 }
 
 span.navbar-toggler {
@@ -99,7 +126,7 @@ div#constructionModal {
 
     div.modal-body {
 
-        background-image: url(/img/constuction.jpg);
+        background-image: url(../img/constuction.jpg);
         background-position: center;
         background-size: cover;
 
@@ -110,99 +137,109 @@ div#constructionModal {
     }
 }
 
-div#project_carousel{
-    img{
+div#project_carousel {
+    img {
         height: 100vh;
     }
 }
 
 
-div#projecten{
+div#projecten {
 
-    .card {        
-        height: 250px;
+    .card {
+        height: 300px;
         font-size: 1rem;
-    }
-    #card1 {
-        background-image: url(../img/euroclear.png);
-        
-        background-size: contain;
-        background-repeat: no-repeat;
+        border-radius: $border_custom;
+
     }
 
-    #card2 {
-        background-image: url(../img/Luxemburg.jpg);
-        background-position: center;
-        background-size: cover;
-    }
-    
-    #card3 {
-        background-image: url(../img/slovenië.JPG);
-        background-position: left;
-        background-size: cover;
-    }
-    
-    #card4 {
-        background-image: url(../img/Spanje.JPG);
-        background-position: left;
-        background-size: cover;
-    }    
-    
-    .shadow-drop-2-tl{  
+    .shadow-drop-2-tl {
         &:hover {
             -webkit-animation: shadow-drop-2-tl 0.75s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-            animation: shadow-drop-2-tl 0.75s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;        
+            animation: shadow-drop-2-tl 0.75s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+
+            &#card1 {
+                @include import_image("../img/euroclear.png");
+            }
+
+            &#card2 {
+                @include import_image("../img/Cs50x.png");
+
+            }
+
+            &#card3 {
+                @include import_image("../img/travelbird.png");
+
+            }
+
+            &#card4 {
+                @include import_image("../img/portfolio.png");
+
+            }
+
+            @media (min-width: $breakpoint_small) {
+
+                &#card1,
+                &#card2,
+                &#card3,
+                &#card4 {
+                    background-position: left;
+                }
+            }
+
+            @media (max-width: $breakpoint_small) {
+                .card-body {
+                    display: none;
+                }
+            }
         }
-        
-        span.project{
+
+        span.project {
             position: relative;
             font-size: 1.5rem;
-            
-            &:before{
+
+            &:before {
                 content: "";
                 position: absolute;
                 width: 0;
                 height: 2px;
                 bottom: 0;
                 right: 0;
-              
+
                 background-color: rgba($color: $Indigo_dye, $alpha: 1);
                 visibility: hidden;
                 transition: all 0.3s ease-in-out;
             }
         }
 
-        &:hover .zwart{
-            background-color: rgba($color: $Indigo_dye, $alpha: .6);    
+        &:hover .zwart {
+            background-color: rgba($color: $Indigo_dye, $alpha: .1);
         }
 
-        &:hover span.project:before{
+        &:hover span.project:before {
             visibility: visible;
             width: 100%;
         }
 
-        &:hover  small.tech{
+        &:hover small.tech {
             color: rgba(0, 0, 0, 1);
         }
 
-        .zwart{
+        .zwart {
             width: 100%;
             height: 100%;
-            background-color: rgba($color: $Indigo_dye, $alpha: .1);
+            background-color: rgba($color: $Indigo_dye, $alpha: .4);
             border-radius: $border_custom;
             color: $Indigo_dye;
+
+
         }
 
-        small.tech{
+        small.tech {
             color: rgba(0, 0, 0, 0);
             transition: all 0.5s linear;
             font-size: 1rem;
-         }
-    } 
-    
+        }
+    }
+
 }
-
-
-
-
-
