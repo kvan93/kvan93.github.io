@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Kevin Vanaerschodt">
     <meta name="keywords" content="Kevin Vanaerschodt, portfolio, website, Web developer, Mobile developer">
+    <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
     <title>Kevin Vanaerschodt -- Website</title>
 
     <!--Favicon-->
@@ -54,7 +55,7 @@
 
 <body class="vh-100">
 
-    <div class="parallax ">
+    <div class="parallax " id="profileparallax">
         <div class="h-100 w-100 transparent_parallax ">
             <nav class="navbar navbar-expand-lg navbar-dark  bg-transparent sticky-top " id="navigatie">
 
@@ -108,7 +109,7 @@
             <div class="container-fluid vh-100 " id="parallaxtop">
                 <div class="row h-100  justify-content-center align-items-center">
                     <div class="col-xl-4 col-lg-4 col-md-6 col-sm-8 col-12" id="cardcontainer">
-                        <div class="card mx-3 rounded-lg " id="ProfielCard">
+                        <div class="card mx-0 mx-md-3  shadow" id="ProfielCard">
                             <div class="card-body text-center">
                                 <h1 class="card-title d-none d-xl-block">Kevin Vanaerschodt</h1>
                                 <h2 class="card-title d-none d-lg-block d-xl-none">Kevin Vanaerschodt</h2>
@@ -186,7 +187,7 @@
                 </div>
             </div>
 
-            <div id="downicon" class="d-none d-md-block" onclick="window.scroll({top:120,left:0, behavior:'smooth'})">
+            <div id="downicon" class="d-none d-md-block" onclick="window.scroll({top:375,left:0, behavior:'smooth'})">
                 <i class="fas fa-angle-double-down bounce-top fa-2x "></i>
             </div>
 
@@ -194,53 +195,85 @@
 
     </div>
 
-    <div class="container-lg  text-dark" id="Overmezelf">
-        <div class="card border-0 m-5">
+    <div id="Overmezelf">
+        <div class="container-lg min-vh-100 text-dark">
+            <div class="row h-100 justify-content-center align-items-center">
+                <div class="col-12 col-md-7">
+                    <div class="card border-0 m-md-5">
+                        <div class="card-body">
+                            <article class="card-text text-justify ">
+                                <h1 class="card-title text-center">About me</h1>
+                                <p class="font-weight-bold">
+                                    I'm a Web/Mobile app developer living in Aarschot and I'm currently in training as a
+                                    hybrid
+                                    app developer until April 2021. In this course we will learn the basic front-end
+                                    technologies such as Bootstrap, HTML, CSS, SASS and Javascript. Later we will learn
+                                    to use
+                                    Angular, Ionic framework and connecting to Firebase.
+                                    I'm looking for a job where I can develop my experience these technologies.
+                                </p>
+                                <p class="font-weight-bold">
 
-            <div class="card-body">
-                <article class="card-text text-justify ">
-                    <h1 class="card-title">About me</h1>
-                    <p class="font-weight-bold">
-                        I'm a Web/Mobile app developer living in Aarschot and I'm currently in training as a hybrid
-                        app developer until April 2021. In this course we will learn the basic front-end
-                        technologies such as Bootstrap, HTML, CSS, SASS and Javascript. Later we will learn to use
-                        Angular, Ionic framework and connecting to Firebase.
-                        I'm looking for a job where I can develop my experience these technologies.
-                    </p>
-                    <p class="font-weight-bold">
-
-                        I have prior experience in building complex websites and applications in a .NET environment.
-                        I have 3 years professional experience working with C#, VB.NET, SQL Server and basic
-                        front-end stack (HTML, CSS, JavaScript/Jquery).
-                    </p>
-                    <p class="font-weight-bold">
-                        In a part of my free time, I develop new skills or learn new technologies such as Mobile
-                        development, Machine Learning and AI, fiddle around on my Raspberry Pi, ...
-                    </p>
-                    <p class="font-weight-bold">
-                        My hobbies are theatre, futsal (goalkeeper), cycling and casual gaming.
-                    </p>
+                                    I have prior experience in building complex websites and applications in a .NET
+                                    environment.
+                                    I have 3 years professional experience working with C#, VB.NET, SQL Server and basic
+                                    front-end stack (HTML, CSS, JavaScript/Jquery).
+                                </p>
+                                <p class="font-weight-bold">
+                                    In a part of my free time, I develop new skills or learn new technologies such as
+                                    Mobile
+                                    development, Machine Learning and AI, fiddle around on my Raspberry Pi, ...
+                                </p>
+                                <p class="font-weight-bold">
+                                    My hobbies are theatre, futsal (goalkeeper), cycling and casual gaming.
+                                </p>
 
 
 
-                </article>
+                            </article>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-12 col-md-5">
+                    <img src="img/profiel_foto.JPG" class="img-fluid shadow-lg rounded-lg" alt="profiel foto"
+                        id="profielfoto">
+                </div>
             </div>
         </div>
+
+        <div class="bgsplash ">
+
+        </div>
+
     </div>
 
-    <!--Projecten-->
 
-    <div class="container-lg " id="projecten">
+    <!--Projecten-->
+    <div class="parallax d-none d-lg-block" id="projectparallax">
+    </div>
+
+    <div class="container-lg my-5 " id="projecten">
         <div class="row text-center my-3">
             <div class=" col-lg-12">
                 <h1>Projecten</h1>
+                <div class="card border-0 m-5" id="intro">
+                    <div class="card-body">
+                        <p class="font-weight-bold">
+                            Below is an overview of all the projects I've been working on in my career. To receive
+                            more
+                            info on
+                            each project/job, you can click on them.
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="row m-5 text-white text-right">
             <div class="col-12 my-3">
                 <div class="card border-0 shadow-drop-2-tl " id="card1">
-                    <div class="zwart shadow-lg " data-toggle="collapse" data-target="#collapse_euro"
-                        aria-expanded="false" aria-controls="collapse_euro">
+                    <div class="zwart shadow " data-toggle="collapse" data-target="#collapse_euro" aria-expanded="false"
+                        aria-controls="collapse_euro">
                         <div class="card-body">
                             <h5 class="card-title "><span class="project">Euroclear</span></h5>
                             <small class="tech ">.NET developer</small>
@@ -250,9 +283,17 @@
             </div>
 
             <div class="collapse col-12" id="collapse_euro">
-                <div class="card card-body text-dark">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
-                    Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                <div class="card card-body border-0 text-dark shadow my-3">
+                    <div class="row">
+                        <div class="col-4">
+                            <img src="img/projectparallax(1).png" class="img-thumbnail" alt="project Euroclear">
+                        </div>
+                        <div class="col-8">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae numquam ipsam totam
+                                eligendi recusandae obcaecati necessitatibus ipsum dolore repellat. Quibusdam sit
+                                aliquam explicabo consequuntur qui autem, excepturi ex facilis quia.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -262,7 +303,7 @@
             <div class=" col my-3 ">
                 <div class="card border-0 shadow-drop-2-tl  " id="card2">
                     <div class="zwart shadow-lg" data-toggle="collapse" data-target="#collapse_cs50"
-                    aria-expanded="false" aria-controls="collapse_cs50">
+                        aria-expanded="false" aria-controls="collapse_cs50">
 
                         <div class="card-body ">
                             <h5 class="card-title"><span class="project">CS50X - Final Project</span></h5>
@@ -273,9 +314,17 @@
             </div>
 
             <div class="collapse col-12" id="collapse_cs50">
-                <div class="card card-body text-dark">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
-                    Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                <div class="card card-body text-dark shadow my-3">
+                    <div class="row">
+                        <div class="col-8">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae numquam ipsam totam
+                                eligendi recusandae obcaecati necessitatibus ipsum dolore repellat. Quibusdam sit
+                                aliquam explicabo consequuntur qui autem, excepturi ex facilis quia.</p>
+                        </div>
+                        <div class="col-4">
+                            <img src="img/projectparallax(1).png" class="img-thumbnail" alt="project Euroclear">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -284,7 +333,7 @@
             <div class="col col-lg-12 my-3">
                 <div class="card border-0 shadow-drop-2-tl " id="card3">
                     <div class="zwart shadow-lg " data-toggle="collapse" data-target="#collapse_travel"
-                    aria-expanded="false" aria-controls="collapse_travel">
+                        aria-expanded="false" aria-controls="collapse_travel">
 
                         <div class="card-body ">
                             <h5 class="card-title  "><span class="project ">Flyanair - TravelSite </span></h5>
@@ -296,9 +345,17 @@
             </div>
 
             <div class="collapse col-12" id="collapse_travel">
-                <div class="card card-body text-dark">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
-                    Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                <div class="card card-body text-dark shadow my-3">
+                    <div class="row">
+                        <div class="col-4">
+                            <img src="img/projectparallax(1).png" class="img-thumbnail" alt="project Euroclear">
+                        </div>
+                        <div class="col-8">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae numquam ipsam totam
+                                eligendi recusandae obcaecati necessitatibus ipsum dolore repellat. Quibusdam sit
+                                aliquam explicabo consequuntur qui autem, excepturi ex facilis quia.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -308,7 +365,7 @@
             <div class="col col-lg-12 my-3">
                 <div class="card border-0 shadow-drop-2-tl " id="card4">
                     <div class="zwart shadow-lg" data-toggle="collapse" data-target="#collapse_port"
-                    aria-expanded="false" aria-controls="collapse_port">
+                        aria-expanded="false" aria-controls="collapse_port">
                         <div class="card-body ">
                             <h5 class="card-title"><span class="projects ">Portfolio website</span></h5>
                             <small class="tech">Front-end</small>
@@ -319,8 +376,16 @@
 
             <div class="collapse col-12" id="collapse_port">
                 <div class="card card-body text-dark">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
-                    Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                    <div class="row">
+                        <div class="col-8">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae numquam ipsam totam
+                                eligendi recusandae obcaecati necessitatibus ipsum dolore repellat. Quibusdam sit
+                                aliquam explicabo consequuntur qui autem, excepturi ex facilis quia.</p>
+                        </div>
+                        <div class="col-4">
+                            <img src="img/projectparallax(1).png" class="img-thumbnail" alt="project Euroclear">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -342,6 +407,10 @@
         </div>
     </div>
 
+    <div class="parallax d-none d-lg-block" id="footerparallax">
+
+    </div>
+
     <footer id="contact">
         <div class="container-fluid">
             <div class="row py-lg-5">
@@ -354,6 +423,8 @@
                                 class="fab fa-linkedin fa-2x"></i></a>
                         <a href="https://github.com/kvan93" class=" text-light mx-3"><i
                                 class="fab fa-github fa-2x"></i></a>
+                        <a href="https://www.instagram.com/sionyx93/" class=" text-light mx-3"><i
+                                class="fab fa-instagram fa-2x"></i></a>
                         <a href="https://twitter.com/sionyx93" target="_blank" class="text-light mx-3"><i
                                 class="fab fa-twitter fa-2x"></i></a>
                         <a href="https://discordapp.com/users/771284741403836416" class=" text-light mx-3"><i

@@ -28,13 +28,41 @@ body {
 }
 
 .parallax {
-    background-image: url(../img/achtergrond.jpg);
+
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    height: 100vh;
+
+
+    &#profileparallax {
+        background-image: url(../img/achtergrond.jpg);
+        height: 100vh;
+    }
+
+    @media (max-width: $breakpoint_small) {
+        &#profileparallax {
+            background-image: none;
+            height: 125vh ;            
+        }
+
+        & .transparent_parallax {
+            background-color: rgba(0, 0, 0, 0.0);
+            position: relative;
+        }
+    }
+
+    &#projectparallax {
+        background-image: url(../img/projectparallax.png);
+        height: 750px;
+    }
+
+    &#footerparallax {
+        background-image: url(../img/footerparallax.jpg);
+        height: 750px;
+    }
 }
+
 
 .transparent_parallax {
     background-color: rgba(0, 0, 0, 0.6);
@@ -94,9 +122,9 @@ footer {
 }
 
 div.card#ProfielCard {
-    border: none;
-    background-color: rgba($color: $white, $alpha: 1);
+    border: none;    
     color: black;
+    border-radius: $border_custom * 2 ;
 
     div.border-bottom {
         border-bottom: 2px solid $CG_blue !important
@@ -116,6 +144,35 @@ div.card#ProfielCard {
     }
 
 }
+
+div#Overmezelf {
+    position: relative;
+
+    div.bgsplash {
+        position: absolute;
+        bottom: -50px;
+        width: 100%;
+        height: 100vh;
+        background-image: url(../img/backgroundsplash.png);
+        background-size: cover;
+        background-position: right;
+        z-index: -1;
+    }
+
+    @media (max-width: $breakpoint_medium) {
+        div.bgsplash {
+            background-image: none;
+        }
+    }
+
+    img#profielfoto {
+        padding:10px;
+        border:2px solid $CG_blue;
+        background-color:$white;
+     }
+}
+
+
 
 div#constructionModal {
 
@@ -146,17 +203,22 @@ div#project_carousel {
 
 div#projecten {
 
+    #intro {
+        height: initial;
+        border-radius: $border_custom;
+    }
+
     .card {
         height: 300px;
         font-size: 1rem;
         border-radius: $border_custom;
-
     }
 
     .shadow-drop-2-tl {
         &:hover {
             -webkit-animation: shadow-drop-2-tl 0.75s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
             animation: shadow-drop-2-tl 0.75s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+
 
             &#card1 {
                 @include import_image("../img/euroclear.png");
@@ -214,6 +276,7 @@ div#projecten {
 
         &:hover .zwart {
             background-color: rgba($color: $Indigo_dye, $alpha: .1);
+
         }
 
         &:hover span.project:before {
@@ -231,6 +294,22 @@ div#projecten {
             background-color: rgba($color: $Indigo_dye, $alpha: .4);
             border-radius: $border_custom;
             color: $Indigo_dye;
+
+        }
+
+        div.zwart[aria-expanded="true"] {
+            background-color: rgba($color: $Indigo_dye, $alpha: .1);
+
+            & span.project:before {
+                visibility: visible;
+                width: 100%;
+            }
+
+            & small.tech {
+                color: rgba(0, 0, 0, 1);
+            }
+
+
         }
 
         small.tech {
@@ -238,6 +317,8 @@ div#projecten {
             transition: all 0.5s linear;
             font-size: 1rem;
         }
+
+
     }
 
 }
