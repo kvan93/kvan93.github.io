@@ -140,9 +140,7 @@ div.card#ProfielCard {
         &:hover {
             background-color: $Indigo_dye;
         }
-
     }
-
 }
 
 div#Overmezelf {
@@ -177,7 +175,6 @@ div#Overmezelf {
 div#constructionModal {
 
     div.modal-content {
-
         height: 400px;
     }
 
@@ -208,8 +205,13 @@ div#projecten {
         border-radius: $border_custom;
     }
 
-    .card {
+    div.card.shadow-drop-2-tl {
         height: 300px;
+        font-size: 1rem;
+        border-radius: $border_custom;
+    }
+
+    .collapse div.card{
         font-size: 1rem;
         border-radius: $border_custom;
     }
