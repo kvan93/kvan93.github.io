@@ -1,2 +1,5 @@
 node_modules
 debug.log
+.metals/metals.log
+.metals/metals.lock.db
+.metals/metals.h2.db
