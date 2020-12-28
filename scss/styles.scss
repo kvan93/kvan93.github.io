@@ -104,7 +104,6 @@ h4 {
 }
 
 #contact {
-
     h1,
     h2,
     h4 {
@@ -170,8 +169,6 @@ div#Overmezelf {
      }
 }
 
-
-
 div#constructionModal {
 
     div.modal-content {
@@ -231,18 +228,20 @@ div#projecten {
 
             }
 
-            &#card3 {
-                @include import_image("../img/travelbird.png");
-
+            @media (min-width: $breakpoint_medium) {
+                &#card3 {
+                    @include import_image("../img/travelbird.png");
+    
+                }
+    
+                &#card4 {
+                    @include import_image("../img/portfolio.png");
+    
+                }
             }
+            
 
-            &#card4 {
-                @include import_image("../img/portfolio.png");
-
-            }
-
-            @media (min-width: $breakpoint_small) {
-
+            @media (min-width: $breakpoint_medium) {
                 &#card1,
                 &#card2,
                 &#card3,
@@ -251,10 +250,25 @@ div#projecten {
                 }
             }
 
-            @media (max-width: $breakpoint_small) {
+            @media (max-width: $breakpoint_medium) {
                 .card-body {
                     display: none;
                 }
+            }
+            @media (max-width: $breakpoint_Large) {
+                &#card3{
+                    @include import_image("../img/travelbird_sm.png");
+                }
+                &#card4{
+                    @include import_image("../img/portfolio_sm.png");
+                    & .card-body{
+                        color: #FEFCFB;
+                    }
+                    & .tech{
+                        display: none;
+                    }
+                }
+           
             }
         }
 
