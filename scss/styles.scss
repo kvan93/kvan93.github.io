@@ -1,8 +1,26 @@
+// Variabelen
+
 $oxford_blue: #0A1128;
 $Royal_blue_dark: #001F54;
 $Indigo_dye: #034078;
 $CG_blue: #1282A2;
 $white: #FEFCFB;
+
+$border_custom: 15px;
+$breakpoint_small:576px;
+$breakpoint_medium:786px;
+$breakpoint_Large:992px;
+$breakpoint_xL:1200px;
+
+// Mixins
+@mixin import_image($image_url) {
+    background-image: url($image_url);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+// SASS
 
 body {
     font-family: 'Playfair Display', serif;
@@ -10,14 +28,41 @@ body {
 }
 
 .parallax {
-    background-image: url(../img/achtergrond.jpg);
+
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    height: 100vh;
-    
+
+
+    &#profileparallax {
+        background-image: url(../img/achtergrond.jpg);
+        height: 100vh;
+    }
+
+    @media (max-width: $breakpoint_small) {
+        &#profileparallax {
+            background-image: none;
+            height: 125vh ;            
+        }
+
+        & .transparent_parallax {
+            background-color: rgba(0, 0, 0, 0.0);
+            position: relative;
+        }
+    }
+
+    &#projectparallax {
+        background-image: url(../img/projectparallax.png);
+        height: 750px;
+    }
+
+    &#footerparallax {
+        background-image: url(../img/footerparallax.jpg);
+        height: 750px;
+    }
 }
+
 
 .transparent_parallax {
     background-color: rgba(0, 0, 0, 0.6);
@@ -43,21 +88,27 @@ div#cardcontainer {
     margin-bottom: 70px;
 }
 
-
-
 #navigatie {
-
 
     li>a,
     div {
         color: $white;
     }
-
 }
 
+
 h1,
+h2,
 h4 {
     color: $CG_blue;
+}
+
+#contact {
+    h1,
+    h2,
+    h4 {
+        color: $white;
+    }
 }
 
 span.navbar-toggler {
@@ -70,9 +121,9 @@ footer {
 }
 
 div.card#ProfielCard {
-    border: none;
-    background-color: rgba($color: $white, $alpha: 1);
+    border: none;    
     color: black;
+    border-radius: $border_custom * 2 ;
 
     div.border-bottom {
         border-bottom: 2px solid $CG_blue !important
@@ -88,21 +139,45 @@ div.card#ProfielCard {
         &:hover {
             background-color: $Indigo_dye;
         }
+    }
+}
 
+div#Overmezelf {
+    position: relative;
+
+    div.bgsplash {
+        position: absolute;
+        bottom: -50px;
+        width: 100%;
+        height: 100vh;
+        background-image: url(../img/backgroundsplash.png);
+        background-size: cover;
+        background-position: right;
+        z-index: -1;
     }
 
+    @media (max-width: $breakpoint_medium) {
+        div.bgsplash {
+            background-image: none;
+        }
+    }
+
+    img#profielfoto {
+        padding:10px;
+        border:2px solid $CG_blue;
+        background-color:$white;
+     }
 }
 
 div#constructionModal {
 
     div.modal-content {
-
         height: 400px;
     }
 
     div.modal-body {
 
-        background-image: url(/img/constuction.jpg);
+        background-image: url(../img/constuction.jpg);
         background-position: center;
         background-size: cover;
 
@@ -111,4 +186,155 @@ div#constructionModal {
             text-shadow: 0 1px 0 $oxford_blue;
         }
     }
+}
+
+div#project_carousel {
+    img {
+        height: 100vh;
+    }
+}
+
+
+div#projecten {
+
+    #intro {
+        height: initial;
+        border-radius: $border_custom;
+    }
+
+    div.card.shadow-drop-2-tl {
+        height: 300px;
+        font-size: 1rem;
+        border-radius: $border_custom;
+    }
+
+    .collapse div.card{
+        font-size: 1rem;
+        border-radius: $border_custom;
+    }
+
+    .shadow-drop-2-tl {
+        &:hover {
+            -webkit-animation: shadow-drop-2-tl 0.75s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            animation: shadow-drop-2-tl 0.75s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+
+
+            &#card1 {
+                @include import_image("../img/euroclear.png");
+            }
+
+            &#card2 {
+                @include import_image("../img/Cs50x.png");
+
+            }
+
+            @media (min-width: $breakpoint_medium) {
+                &#card3 {
+                    @include import_image("../img/travelbird.png");
+    
+                }
+    
+                &#card4 {
+                    @include import_image("../img/portfolio.png");
+    
+                }
+            }
+            
+
+            @media (min-width: $breakpoint_medium) {
+                &#card1,
+                &#card2,
+                &#card3,
+                &#card4 {
+                    background-position: left;
+                }
+            }
+
+            @media (max-width: $breakpoint_medium) {
+                .card-body {
+                    display: none;
+                }
+            }
+            @media (max-width: $breakpoint_Large) {
+                &#card3{
+                    @include import_image("../img/travelbird_sm.png");
+                }
+                &#card4{
+                    @include import_image("../img/portfolio_sm.png");
+                    & .card-body{
+                        color: #FEFCFB;
+                    }
+                    & .tech{
+                        display: none;
+                    }
+                }
+           
+            }
+        }
+
+        span.project {
+            position: relative;
+            font-size: 1.5rem;
+
+            &:before {
+                content: "";
+                position: absolute;
+                width: 0;
+                height: 2px;
+                bottom: 0;
+                right: 0;
+
+                background-color: rgba($color: $Indigo_dye, $alpha: 1);
+                visibility: hidden;
+                transition: all 0.3s ease-in-out;
+            }
+        }
+
+        &:hover .zwart {
+            background-color: rgba($color: $Indigo_dye, $alpha: .1);
+
+        }
+
+        &:hover span.project:before {
+            visibility: visible;
+            width: 100%;
+        }
+
+        &:hover small.tech {
+            color: rgba(0, 0, 0, 1);
+        }
+
+        .zwart {
+            width: 100%;
+            height: 100%;
+            background-color: rgba($color: $Indigo_dye, $alpha: .4);
+            border-radius: $border_custom;
+            color: $Indigo_dye;
+
+        }
+
+        div.zwart[aria-expanded="true"] {
+            background-color: rgba($color: $Indigo_dye, $alpha: .1);
+
+            & span.project:before {
+                visibility: visible;
+                width: 100%;
+            }
+
+            & small.tech {
+                color: rgba(0, 0, 0, 1);
+            }
+
+
+        }
+
+        small.tech {
+            color: rgba(0, 0, 0, 0);
+            transition: all 0.5s linear;
+            font-size: 1rem;
+        }
+
+
+    }
+
 }
