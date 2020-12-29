@@ -41,16 +41,10 @@
     <link rel="stylesheet" type="text/css" href="css/animista.css">
 
 
-
-
-
-
-
-
     <!--Eigen Css-->
 
 
-    <link rel="stylesheet" href="css/styles.css?v=8">
+    <link rel="stylesheet" href="css/styles.css?v=9">
 </head>
 
 <body class="vh-100">
@@ -78,14 +72,14 @@
                             <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown"
                                 aria-haspopup="true" aria-expanded="false">Projects</a>
                             <div class="dropdown-menu text-dark" aria-labelledby="dropdownId">
-                                <a href="#card1" class="dropdown-item" >Euroclear</a>
+                                <a href="#card1" class="dropdown-item">Euroclear</a>
                                 <div class="dropdown-divider"></div>
-                                <a href="#card2" class="dropdown-item" >Cs50x -
+                                <a href="#card2" class="dropdown-item">Cs50x -
                                     Intro to CS - Android Final Project</a>
                                 <div class="dropdown-divider"></div>
-                                <a href="#card3" class="dropdown-item" >Flynair
+                                <a href="#card3" class="dropdown-item">Flynair
                                     Travel Website</a>
-                                <a href="#card4" class="dropdown-item" >Portfolio
+                                <a href="#card4" class="dropdown-item">Portfolio
                                     website</a>
 
                             </div>
@@ -100,7 +94,9 @@
                     href="#parallaxtop"><img src="img/logo_wit.png" width=35 alt="achtergrond"
                         class=" img-fluid rounded-lg"></a>
 
-                <div class="d-none d-lg-inline-block navbar-text flex-grow-1 text-right flex-lg-grow-0 mx-2"><i>Kevin
+                <div class="d-none d-lg-inline-block navbar-text flex-grow-1 text-right flex-lg-grow-0 mx-2"><i
+                        data-toggle="tooltip" data-placement="bottom"
+                        title="Nothing is true, everything is permitted">Kevin
                         Vanaerschodt</i>
                 </div>
             </nav>
@@ -246,258 +242,292 @@
     <div class="parallax d-none d-lg-block" id="projectparallax">
     </div>
 
-    <div class="container-lg my-5 " id="projecten">
-        <div class="row text-center my-3">
-            <div class=" col-lg-12">
-                <h1>Projects</h1>
-                <div class="card border-0 m-5" id="intro">
-                    <div class="card-body">
-                        <p class="font-weight-bold">
-                            Below is an overview of all the projects I've been working on in my career. To receive
-                            more
-                            info on
-                            each project/job, you can click on them.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row m-0 m-md-5 text-white text-right">
-            <div class="col-12 my-3">
-                <div class="card border-0 shadow-drop-2-tl " id="card1">
-                    <div class="zwart shadow " data-toggle="collapse" data-target="#collapse_euro" aria-expanded="false"
-                        aria-controls="collapse_euro">
+    <div class="container-fluid p-0 py-5" id="project_bg">
+
+
+        <div class="container-lg my-5 " id="projecten">
+
+
+            <div class="row text-center my-3">
+                <div class=" col-lg-12">
+                    <h1>Projects</h1>
+                    <div class="card border-0 m-5 bg-transparent" id="intro">
                         <div class="card-body">
-                            <h5 class="card-title "><span class="project">Euroclear</span></h5>
-                            <small class="tech ">.NET developer</small>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="collapse col-12" id="collapse_euro">
-                <div class="card card-body border-0 text-dark shadow my-3">
-                    <div class="row">
-                        <div class="col-12 col-md-4 my-3 ">                            
-                                <img src="img/euroclear_bulding.png" class="img-thumbnail  d-block mx-auto" alt="project Euroclear">                         
-                        </div>
-                        <div class="col-12 col-md-8 d-flex flex-column align-items-center d-block my-3">
-                            <h4><u> Tech</u></h4>
-
-                            <ul class="list-group list-group-flush font-weight-bold">
-                                <li class="list-group-item">
-                                    .NET framework / C# / VB.NET / Entity Framework
-                                </li>
-                                <li class="list-group-item">
-                                    HTML & Razor / CSS / bootstrap
-                                </li>
-                                <li class="list-group-item">
-                                    JS / jQuery(UI) & jQuery DataTables
-                                </li>
-                                <li class="list-group-item">
-                                    Microsoft SQL Server
-                                </li>
-                                <li class="list-group-item">
-                                    TFS / Azure Devops / CI & CD
-                                </li>
-                                <li class="list-group-item">
-                                    SSIS / API / MQ
-                                </li>
-
-                            </ul>
-
-                        </div>
-                    </div>
-                    <div class="row my-3">
-                        <div class="col-12 text-left font-weight-bold">
-                            <h4><u> Description</u></h4>
-                            <p>During my time at Euroclear, I worked on multiple front-end and back-end projects. A summary of the important projects and features: </p>
-                            <ul>
-                                <li>Adding three new webpages to a website. This website collects data from Mainframe via Ajax requests and displaying them on screen by using jQuery Datatables</li>
-                                <li>Adding a couple of webpages and adding business functionality to the back-end. Data was collected from SQL Database and Mainframe</li>
-                                <li>Creating a new back-end application from scratch in coorperation with a software company from Luxembourg. Here we used for the first time in the team Entity Framework and tried to implement a CI/CD pipeline.</li>
-                                <li>Updating a website to use the latest .NET technology stack in the company together with a upgrade of the jQuery Datatables. This project also included a first proof of concept for a CI/CD pipeline.
-
-                                </li>
-                                <li>Creating a automatic data pipeline by using Microsoft SSIS and XPS jobs.</li>
-                                <li>Winning a hackathon organised by Capgemini where we implemented a document search engine concept for the complete company by using Elastic Search.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-        <div class="row m-0 m-md-5 text-white text-right">
-
-            <div class="col-12 my-3 ">
-                <div class="card border-0 shadow-drop-2-tl  " id="card2">
-                    <div class="zwart shadow-lg" data-toggle="collapse" data-target="#collapse_cs50"
-                        aria-expanded="false" aria-controls="collapse_cs50">
-
-                        <div class="card-body ">
-                            <h5 class="card-title"><span class="project">CS50X - Final Project</span></h5>
-                            <small class="tech">Android Native app</small>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="collapse col-12" id="collapse_cs50">
-                <div class="card card-body text-dark shadow my-3">
-                    <div class="row">
-                        <div class="col-12 col-md-8 d-flex flex-column align-items-center d-block my-3">
-                            <h4><u> Tech</u></h4>
-
-                            <ul class="list-group list-group-flush font-weight-bold">
-                                <li class="list-group-item">
-                                    Android Studio / Java
-                                </li>
-                                <li class="list-group-item">
-                                    Room Db & SQLite
-                                </li>
-                                <li class="list-group-item">
-                                    API & Volley framework for HTTP requests
-                                </li>
-                                <li class="list-group-item">
-                                    Github
-                                </li>
-                            </ul>
-
-                        </div>
-                        <div class="col-12 col-md-4 my-3 ">
-                            
-                                <img src="img/Cs50x_foto1.png" class="img-thumbnail d-block mx-auto" alt="project Cs50x">
-                            
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-12 text-right font-weight-bold my-3">
-                            <h4><u> Description</u></h4>
-                            <p>This native android application was the final project of an online course given by Harvard. This course was the infamous Cs50 Introduction to computer science where all the basics of computer science were covered.
-                                In this course I've learned the fundamental principles of Computer science and programming languages like C, python, SQL and Java for Native Android apps. </p>
-                                <p>The app itself is a simple news website specialized for esports news. The data is collected by targeting the SteamNews API and is stored in a SQLlite Database. In the app, you can browse the latest news articles for multiple esports and save them in a favourites list. The backend is written in Java for Android studio </p>
-                        </div>
-                        <div class="col-12 text-left my-3">
-                            <h4><u>Extra</u></h4>
-                            <div class="my-3 d-none d-md-block">
-                                <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/tFhVsLRFTJA"  frameborder="0" class="mx-auto d-block" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            </div>
-                            <div class="my-3 d-block d-md-none">
-                                <a href="https://youtu.be/tFhVsLRFTJA" target="_blank">Youtube Link</a>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row m-0 m-md-5 text-white text-right">
-
-            <div class="col col-lg-12 my-3">
-                <div class="card border-0 shadow-drop-2-tl " id="card3">
-                    <div class="zwart shadow-lg " data-toggle="collapse" data-target="#collapse_travel"
-                        aria-expanded="false" aria-controls="collapse_travel">
-
-                        <div class="card-body ">
-                            <h5 class="card-title  "><span class="project ">Flyanair - TravelSite </span></h5>
-                            <small class="tech">Bootstrap project </small>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="collapse col-12" id="collapse_travel">
-                <div class="card card-body text-dark shadow my-3">
-                    <div class="row">
-                        <div class="col-12 col-md-6 my-3 ">
-                            <img src="img/project_travel.png" class="img-thumbnail d-block mx-auto " alt="project Euroclear">
-                        </div>
-                        <div class="col-12 col-md-6 d-flex flex-column align-items-center d-block my-3">
-                            <h4><u> Tech</u></h4>
-
-                            <ul class="list-group list-group-flush font-weight-bold">
-                                <li class="list-group-item">
-                                    HTML5 / CSS3 / Bootstrap / Animista CSS
-                                </li>                                                               
-                                <li class="list-group-item">
-                                    JavaScript
-                                </li>                                
-                                <li class="list-group-item">
-                                    Canva
-                                </li>                                
-                                <li class="list-group-item">
-                                   Git
-                                </li>                          
-
-                            </ul>
-
-                        </div>
-                    </div>
-                    <div class="row ">
-                        <div class="col-12 text-left font-weight-bold my-3">
-                            <h4><u> Description</u></h4>
-                            <p>This project was made during the course of hybrid app development which is organised by MultiMedi, Obelisk and the VDAB. The project goal was to individually create a travel website by using mainly Bootstrap components and styling. </p>
-                            
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-        <div class="row m-0 m-md-5 text-white text-right">
-
-            <div class="col-12  my-3">
-                <div class="card border-0 shadow-drop-2-tl " id="card4">
-                    <div class="zwart shadow-lg" data-toggle="collapse" data-target="#collapse_port"
-                        aria-expanded="false" aria-controls="collapse_port">
-                        <div class="card-body ">
-                            <h5 class="card-title"><span class="project ">Portfolio website</span></h5>
-                            <small class="tech">Front-end</small>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="collapse col-12" id="collapse_port">
-                <div class="card card-body text-dark my-3">
-                    <div class="row">
-                        <div class="col-12 col-md-8 d-flex flex-column align-items-center d-block my-3">
-                            <h4><u> Tech</u></h4>
-
-                            <ul class="list-group list-group-flush font-weight-bold">
-                                <li class="list-group-item">
-                                    HTML5 / CSS3 / SASS / bootstrap / Animista CSS
-                                </li>
-                                <li class="list-group-item">
-                                    Js / JQuery 
-                                </li>
-                                <li class="list-group-item">
-                                    Canva
-                                </li>
-                                <li class="list-group-item">
-                                    Gulp
-                                </li>
-                                <li class="list-group-item">
-                                    Git & Github (pages)
-                                </li>
-
-
-                            </ul>
-
-                        </div>
-                        <div class="col-12 col-md-4 my-3 ">
-                            <img src="img/portfolio_foto1.png" class="img-thumbnail d-block mx-auto " alt="project Euroclear">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-12 text-right font-weight-bold my-3">
-                            <h4><u> Description</u></h4>
-                            <p>This website was made as an assignment during the hybrid app development course.The goal of this website is to display my projects and to promote myself to the public. And to have my own personal website of course 😉 . 
-                                Later on, a link to this website will be posted on a job day website created by me and my colleagues from this course. 
+                            <p class="font-weight-bold">
+                                Below is an overview of all the projects I've been working on in my career. To receive
+                                more
+                                info on
+                                each project/job, you can click on them.
                             </p>
-                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row m-0 m-md-5 text-white text-right">
+                <div class="col-12 my-3">
+                    <div class="card border-0 shadow-drop-2-tl " id="card1">
+                        <div class="zwart shadow " data-toggle="collapse" data-target="#collapse_euro"
+                            aria-expanded="false" aria-controls="collapse_euro">
+                            <div class="card-body">
+                                <h5 class="card-title "><span class="project">Euroclear</span></h5>
+                                <small class="tech ">.NET developer</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="collapse col-12" id="collapse_euro">
+                    <div class="card card-body border-0 text-dark shadow my-3">
+                        <div class="row">
+                            <div class="col-12 col-md-4 my-3 ">
+                                <img src="img/euroclear_bulding.png" class="img-thumbnail  d-block mx-auto"
+                                    alt="project Euroclear">
+                            </div>
+                            <div class="col-12 col-md-8 d-flex flex-column align-items-center d-block my-3">
+                                <h4><u> Tech</u></h4>
+
+                                <ul class="list-group list-group-flush font-weight-bold ">
+                                    <li class="list-group-item">
+                                        .NET framework / C# / VB.NET / Entity Framework
+                                    </li>
+                                    <li class="list-group-item">
+                                        HTML & Razor / CSS / bootstrap
+                                    </li>
+                                    <li class="list-group-item">
+                                        JS / jQuery(UI) & jQuery DataTables
+                                    </li>
+                                    <li class="list-group-item">
+                                        Microsoft SQL Server
+                                    </li>
+                                    <li class="list-group-item">
+                                        TFS / Azure Devops / CI & CD
+                                    </li>
+                                    <li class="list-group-item">
+                                        SSIS / API / MQ
+                                    </li>
+
+                                </ul>
+
+                            </div>
+                        </div>
+                        <div class="row my-3">
+                            <div class="col-12 text-left font-weight-bold">
+                                <h4><u> Description</u></h4>
+                                <p>During my time at Euroclear, I worked on multiple front-end and back-end projects. A
+                                    summary of the important projects and features: </p>
+                                <ul class="fa-ul">
+                                    <li class="py-3"><span class="fa-li"> <i class="fas fa-code-branch"></i></span>Adding three new webpages to a website. This website collects data from
+                                        Mainframe via Ajax requests and displaying them on screen by using jQuery
+                                        Datatables</li>
+                                    <li  class="py-3"><span class="fa-li"> <i class="fas fa-code-branch"></i> </span>Adding a couple of webpages and adding business functionality to the back-end.
+                                        Data was collected from SQL Database and Mainframe</li>
+                                    <li  class="py-3"><span class="fa-li"> <i class="fas fa-code-branch"></i></span>Creating a new back-end application from scratch in coorperation with a software
+                                        company from Luxembourg. Here we used for the first time in the team Entity
+                                        Framework and tried to implement a CI/CD pipeline.</li>
+                                    <li  class="py-3"><span class="fa-li"> <i class="fas fa-code-branch"></i> </span>Updating a website to use the latest .NET technology stack in the company
+                                        together with a upgrade of the jQuery Datatables. This project also included a
+                                        first proof of concept for a CI/CD pipeline.
+
+                                    </li>
+                                    <li  class="py-3"><span class="fa-li"> <i class="fas fa-code-branch"></i></span>Creating a automatic data pipeline by using Microsoft SSIS and XPS jobs.</li>
+                                    <li  class="py-3"><span class="fa-li"> <i class="fas fa-code-branch"></i> </span>Winning a hackathon organised by Capgemini where we implemented a document
+                                        search engine concept for the complete company by using Elastic Search.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row m-0 m-md-5 text-white text-right">
+
+                <div class="col-12 my-3 ">
+                    <div class="card border-0 shadow-drop-2-tl  " id="card2">
+                        <div class="zwart shadow-lg" data-toggle="collapse" data-target="#collapse_cs50"
+                            aria-expanded="false" aria-controls="collapse_cs50">
+
+                            <div class="card-body ">
+                                <h5 class="card-title"><span class="project">CS50X - Final Project</span></h5>
+                                <small class="tech">Android Native app</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="collapse col-12" id="collapse_cs50">
+                    <div class="card card-body text-dark shadow my-3">
+                        <div class="row">
+                            <div class="col-12 col-md-8 d-flex flex-column align-items-center d-block my-3">
+                                <h4><u> Tech</u></h4>
+
+                                <ul class="list-group list-group-flush font-weight-bold">
+                                    <li class="list-group-item">
+                                        Android Studio / Java
+                                    </li>
+                                    <li class="list-group-item">
+                                        Room Db & SQLite
+                                    </li>
+                                    <li class="list-group-item">
+                                        API & Volley framework for HTTP requests
+                                    </li>
+                                    <li class="list-group-item">
+                                        Github
+                                    </li>
+                                </ul>
+
+                            </div>
+                            <div class="col-12 col-md-4 my-3 ">
+
+                                <img src="img/Cs50x_foto1.png" class="img-thumbnail d-block mx-auto"
+                                    alt="project Cs50x">
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 text-right font-weight-bold my-3">
+                                <h4><u> Description</u></h4>
+                                <p>This native android application was the final project of an online course given by
+                                    Harvard. This course was the infamous Cs50 Introduction to computer science where
+                                    all the basics of computer science were covered.
+                                    In this course I've learned the fundamental principles of Computer science and
+                                    programming languages like C, python, SQL and Java for Native Android apps. </p>
+                                <p>The app itself is a simple news website specialized for esports news. The data is
+                                    collected by targeting the SteamNews API and is stored in a SQLlite Database. In the
+                                    app, you can browse the latest news articles for multiple esports and save them in a
+                                    favourites list. The backend is written in Java for Android studio </p>
+                            </div>
+                            <div class="col-12 text-left my-3">
+                                <h4><u>Extra</u></h4>
+                                <div class="my-3 d-none d-md-block">
+                                    <iframe width="560" height="315"
+                                        src="https://www.youtube-nocookie.com/embed/tFhVsLRFTJA" frameborder="0"
+                                        class="mx-auto d-block"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div>
+                                <div class="my-3 d-block d-md-none">
+                                    <a href="https://youtu.be/tFhVsLRFTJA" target="_blank">Youtube Link</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row m-0 m-md-5 text-white text-right">
+
+                <div class="col col-lg-12 my-3">
+                    <div class="card border-0 shadow-drop-2-tl " id="card3">
+                        <div class="zwart shadow-lg " data-toggle="collapse" data-target="#collapse_travel"
+                            aria-expanded="false" aria-controls="collapse_travel">
+
+                            <div class="card-body ">
+                                <h5 class="card-title  "><span class="project ">Flyanair - TravelSite </span></h5>
+                                <small class="tech">Bootstrap project </small>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="collapse col-12" id="collapse_travel">
+                    <div class="card card-body text-dark shadow my-3">
+                        <div class="row">
+                            <div class="col-12 col-md-6 my-3 ">
+                                <img src="img/project_travel.png" class="img-thumbnail d-block mx-auto "
+                                    alt="project Euroclear">
+                            </div>
+                            <div class="col-12 col-md-6 d-flex flex-column align-items-center d-block my-3">
+                                <h4><u> Tech</u></h4>
+
+                                <ul class="list-group list-group-flush font-weight-bold">
+                                    <li class="list-group-item">
+                                        HTML5 / CSS3 / Bootstrap / Animista CSS
+                                    </li>
+                                    <li class="list-group-item">
+                                        JavaScript
+                                    </li>
+                                    <li class="list-group-item">
+                                        Canva
+                                    </li>
+                                    <li class="list-group-item">
+                                        Git
+                                    </li>
+
+                                </ul>
+
+                            </div>
+                        </div>
+                        <div class="row ">
+                            <div class="col-12 text-left font-weight-bold my-3">
+                                <h4><u> Description</u></h4>
+                                <p>This project was made during the course of hybrid app development which is organised
+                                    by MultiMedi, Obelisk and the VDAB. The project goal was to individually create a
+                                    travel website by using mainly Bootstrap components and styling. </p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row m-0 m-md-5 text-white text-right">
+
+                <div class="col-12  my-3">
+                    <div class="card border-0 shadow-drop-2-tl " id="card4">
+                        <div class="zwart shadow-lg" data-toggle="collapse" data-target="#collapse_port"
+                            aria-expanded="false" aria-controls="collapse_port">
+                            <div class="card-body ">
+                                <h5 class="card-title"><span class="project ">Portfolio website</span></h5>
+                                <small class="tech">Front-end</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="collapse col-12" id="collapse_port">
+                    <div class="card card-body text-dark my-3">
+                        <div class="row">
+                            <div class="col-12 col-md-8 d-flex flex-column align-items-center d-block my-3">
+                                <h4><u> Tech</u></h4>
+
+                                <ul class="list-group list-group-flush font-weight-bold">
+                                    <li class="list-group-item">
+                                        HTML5 / CSS3 / SASS / bootstrap / Animista CSS
+                                    </li>
+                                    <li class="list-group-item">
+                                        Js / JQuery
+                                    </li>
+                                    <li class="list-group-item">
+                                        Canva
+                                    </li>
+                                    <li class="list-group-item">
+                                        Gulp
+                                    </li>
+                                    <li class="list-group-item">
+                                        Git & Github (pages)
+                                    </li>
+
+
+                                </ul>
+
+                            </div>
+                            <div class="col-12 col-md-4 my-3 ">
+                                <img src="img/portfolio_foto1.png" class="img-thumbnail d-block mx-auto "
+                                    alt="project Euroclear">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 text-right font-weight-bold my-3">
+                                <h4><u> Description</u></h4>
+                                <p>This website was made as an assignment during the hybrid app development course. The
+                                    goal of this website is to display my projects and to promote myself to the public.
+                                    And to have my own personal website of course 😉 .
+                                    Later on, a link to this website will be posted on a job day website created by me
+                                    and my colleagues from this course.
+                                </p>
+
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -530,19 +560,19 @@
             <div class="row py-lg-5">
                 <div class="col-12 col-lg-6 text-center py-5">
                     <h2 class="mb-3"> Social Media </h2>
-                    <nav class="d-flex flex-row justify-content-center ">
-                        <a href="https://www.facebook.com/kevin.vanaerschodt/" class=" text-light mx-3"
+                    <nav class="d-flex flex-row flex-wrap  justify-content-center ">
+                        <a href="https://www.facebook.com/kevin.vanaerschodt/" class=" text-light m-3"
                             target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
                         <a href="https://www.linkedin.com/in/kevin-vanaerschodt/" target="_blank"
-                            class=" text-light mx-3"><i class="fab fa-linkedin fa-2x"></i></a>
-                        <a href="https://github.com/kvan93" target="_blank" class=" text-light mx-3"><i
+                            class=" text-light m-3"><i class="fab fa-linkedin fa-2x"></i></a>
+                        <a href="https://github.com/kvan93" target="_blank" class=" text-light m-3"><i
                                 class="fab fa-github fa-2x"></i></a>
-                        <a href="https://www.instagram.com/sionyx93/" target="_blank" class=" text-light mx-3"><i
+                        <a href="https://www.instagram.com/sionyx93/" target="_blank" class=" text-light m-3"><i
                                 class="fab fa-instagram fa-2x"></i></a>
-                        <a href="https://twitter.com/sionyx93" target="_blank" class="text-light mx-3"><i
+                        <a href="https://twitter.com/sionyx93" target="_blank" class="text-light m-3"><i
                                 class="fab fa-twitter fa-2x"></i></a>
                         <a href="https://discordapp.com/users/771284741403836416" target="_blank"
-                            class=" text-light mx-3"><i class="fab fa-discord fa-2x"></i></a>
+                            class=" text-light m-3"><i class="fab fa-discord fa-2x"></i></a>
                     </nav>
                 </div>
                 <div class="col-12 col-lg-6 py-5 text-center">
