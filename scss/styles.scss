@@ -24,7 +24,17 @@ $breakpoint_xL:1200px;
 
 body {
     font-family: 'Playfair Display', serif;
-    font-size: 18px;
+    font-size: 22px;
+  
+}
+
+@media (max-width: $breakpoint_small ){
+    body{
+        background-image: url(../img/background_mobile.png);
+        background-position: center;
+        background-attachment: fixed;
+        background-size: 100vw 100vh;
+    }
 }
 
 .parallax {
@@ -84,12 +94,8 @@ body {
     }
 }
 
-div#cardcontainer {
-    margin-bottom: 70px;
-}
 
 #navigatie {
-
     li>a,
     div {
         color: $white;
@@ -156,7 +162,7 @@ div#Overmezelf {
         z-index: -1;
     }
 
-    @media (max-width: $breakpoint_medium) {
+    @media (max-width: $breakpoint_xL) {
         div.bgsplash {
             background-image: none;
         }
@@ -169,24 +175,7 @@ div#Overmezelf {
      }
 }
 
-div#constructionModal {
 
-    div.modal-content {
-        height: 400px;
-    }
-
-    div.modal-body {
-
-        background-image: url(../img/constuction.jpg);
-        background-position: center;
-        background-size: cover;
-
-        button.close {
-            color: $white;
-            text-shadow: 0 1px 0 $oxford_blue;
-        }
-    }
-}
 
 div#project_carousel {
     img {
@@ -211,9 +200,6 @@ div#project_carousel {
 
 div#projecten {
 
-    
-    
-
     #intro {
         height: initial;
         border-radius: $border_custom;
@@ -221,12 +207,12 @@ div#projecten {
 
     div.card.shadow-drop-2-tl {
         height: 300px;
-        font-size: 1rem;
+        
         border-radius: $border_custom;
     }
 
     .collapse div.card{
-        font-size: 1rem;
+        
         border-radius: $border_custom;
     }
 
