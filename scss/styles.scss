@@ -24,9 +24,23 @@ $breakpoint_xL:1200px;
 
 body {
     font-family: 'Playfair Display', serif;
-    font-size: 22px;
+    font-size: 20px;
   
 }
+
+.navbar{
+    
+    transition: background-color 200ms linear;
+  }
+
+
+@media (min-width: $breakpoint_medium){
+    .navbar.scrolled {
+        background-color: $oxford_blue !important;
+        transition: background-color 200ms linear;
+      } 
+}
+
 
 @media (max-width: $breakpoint_small ){
     body{
