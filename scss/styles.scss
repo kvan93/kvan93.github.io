@@ -22,8 +22,12 @@ $breakpoint_xL:1200px;
 
 // SASS
 
+html {
+    scroll-behavior: smooth;
+  }
+
 body {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Fjalla One', sans-serif;
     font-size: 20px;
   
 }
@@ -31,6 +35,10 @@ body {
 .navbar{
     
     transition: background-color 200ms linear;
+  }
+
+  article p{
+    font-family: 'Playfair Display', serif;
   }
 
 
@@ -73,7 +81,7 @@ body {
     @media (max-width: $breakpoint_small) {
         &#profileparallax {
             background-image: none;
-            height: 125vh ;            
+            height: 120vh ;            
         }
 
         & .transparent_parallax {
@@ -124,7 +132,7 @@ body {
 
 
 h1,
-h2,
+h2,h3,
 h4 {
     color: $CG_blue;
 }
