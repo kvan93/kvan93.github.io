@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel website</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="../icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../icon/favicon-16x16.png">
+
+    <!--Favicon-->
+    <link rel="manifest" href="../icon/site.webmanifest">
+
+    <!--Bootstrap-->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+
+    <!-- Google Fonts Lato-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+
+
+    <!--Eigen Css-->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/animista.css">
+
+
+</head>
+
+<body class="vh-100" id="reviews">
+    <!--navigatie-->
+    <nav class="navbar navbar-light navbar-expand-lg sticky-top bg-white py-0">
+        <a class="navbar-brand" href="../index.html"><img class="img-fluid" src="../img/KV-Air.png"></a>
+
+
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbardropdown"
+            aria-controls="navbardropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class=" dropdown order-0 order-lg-2">
+
+            <button class="dropdown-toggle btn btn-sm btn-dark" data-toggle="dropdown" type="button" id="Login"
+                aria-haspopup="true" aria-expanded="false">
+                <img class="mr-2" width="25"
+                    src='https://avataaars.io/?avatarStyle=Circle&topType=ShortHairShortRound&accessoriesType=Blank&hairColor=Black&facialHairType=Blank&clotheType=Hoodie&clotheColor=Blue03&eyeType=Surprised&eyebrowType=Angry&mouthType=Twinkle&skinColor=Tanned' />
+                <span> Welkom Kevin</span>
+            </button>
+
+            <div class="dropdown-menu dropdown-menu-right text-center" aria-labelledby="Login">
+                <a class="dropdown-item" href="#">Profiel</a>
+                <a class="dropdown-item" href="#">Instellingen</a>
+                <a class="dropdown-item" href="#">Mijn vakanties</a>
+                <a class="dropdown-item" href="#">Kortingen</a>
+                <a class="dropdown-item" href="#">Help</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Log uit</a>
+            </div>
+        </div>
+
+        <div class="collapse navbar-collapse text-center" id="navbardropdown">
+            <ul class="navbar-nav ">
+                <li class="nav-item ">
+                    <a class="nav-link font-weight-bold" href="vlieg.html">Vliegvakantie op maat</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link font-weight-bold" href="auto.html">Auto Huren</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link font-weight-bold" href="fiets.html">Fiets Huren</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link font-weight-bold" href="reviews.html">Reviews</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link font-weight-bold" href="contact.html">Contact</a>
+                </li>
+
+            </ul>
+
+        </div>
+    </nav>
+
+    <div class="container-lg d-flex flex-column  ">
+        <div class="row h-100  justify-content-center mt-5 ">
+            <div class="col-10 col-sm-6 col-md-4  ">
+                <div class="toast scale-in-hor-center" id="toast1" role="alert" aria-live="assertive" aria-atomic="true"
+                    data-autohide="false">
+                    <div class="toast-header">
+                        <img class="mr-2" width="40" height="40"
+                            src='https://avataaars.io/?avatarStyle=Circle&topType=ShortHairDreads02&hairColor=SilverGray&accessoriesType=Blank&hatColor=SilverGrey&facialHairType=Blank&clotheType=ShirtVNeck&clotheColor=PastelOrange&eyeType=EyeRoll&eyebrowType=UnibrowNatural&mouthType=Vomit&skinColor=Pale' />
+                        <strong class="mr-auto">Rick</strong>
+                        <small class="text-muted">02/12/2020</small>
+
+                    </div>
+                    <div class="toast-body">
+                        <p >Hey! I'm a pickle!</p>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row h-100 justify-content-center justify-content-lg-between  mt-md-5 ">
+            <div class="col-10 col-sm-6 col-md-4 ">
+
+                <div class="toast mt-2 scale-in-hor-center_d4" id="toast2" role="alert" aria-live="assertive" aria-atomic="true"
+                    data-autohide="false">
+                    <div class="toast-header">
+                        <img class="mr-2" width="40" height="40"
+                            src='https://avataaars.io/?avatarStyle=Circle&topType=LongHairFrida&accessoriesType=Blank&facialHairType=Blank&facialHairColor=Black&clotheType=BlazerSweater&eyeType=Wink&eyebrowType=Angry&mouthType=Grimace&skinColor=Light' />
+                        <strong class="mr-auto">your mom</strong>
+                        <small class="text-muted">03/12/2020</small>
+
+                    </div>
+                    <div class="toast-body">
+                        <p>I love the look and feel of this site and the customer support you are giving</p>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-10 col-sm-6 col-md-4 align-items-center order-2 order-md-0">
+                <div class="toast mt-2 scale-in-hor-center_d5" id="toast6" role="alert" aria-live="assertive" aria-atomic="true"
+                    data-autohide="false">
+                    <div class="toast-header">
+                        <strong class="mr-auto">Usernamexxx</strong>
+                        <small class="text-muted">Now</small>
+
+                    </div>
+                    <div class="toast-body">
+                        <p class="d-none d-lg-block">
+                            Wil je ons een review achterlaten om ook op deze pagina te verschijnen? <i
+                                class="fas fa-smile-wink    "></i>
+                        </p>
+                        <p class="d-none d-lg-block">Klik dan hieronder en schrijf je review nog vandaag!</p>
+                        <p class="d-block d-lg-none"> Schrijg je eigen review!</p>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+
+
+                        <button name="review" id="review" class="btn btn-dark d-block mx-auto" data-toggle="modal"
+                            data-target="#staticBackdrop" type="button">Voeg een review toe</a>
+                    </div>
+
+
+                </div>
+            </div>
+
+
+            <div class="col-10 col-sm-6 col-md-4 ">
+                <div class="toast mt-2 scale-in-hor-center_d1" id="toast3" role="alert" aria-live="assertive" aria-atomic="true"
+                    data-autohide="false">
+                    <div class="toast-header">
+                        <img class="mr-2" width="40" height="40"
+                            src='https://avataaars.io/?avatarStyle=Circle&topType=ShortHairShortCurly&accessoriesType=Blank&hairColor=Blonde&facialHairType=BeardMedium&facialHairColor=Blonde&clotheType=Overall&clotheColor=Gray02&eyeType=Close&eyebrowType=SadConcerned&mouthType=Twinkle&skinColor=Tanned' />
+                        <strong class="mr-auto">Your friendly neighbour</strong>
+                        <small class="text-muted">1 min. ago</small>
+
+                    </div>
+                    <div class="toast-body">
+                        <p>Couldn't be better!</p>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="far fa-star"></i>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row h-100 justify-content-around  mt-md-5 ">
+            <div class=" col-10 col-sm-6 col-md-4 ">
+
+                <div class="toast mt-2 scale-in-hor-center_d3" id="toast4" role="alert" aria-live="assertive" aria-atomic="true"
+                    data-autohide="false">
+                    <div class="toast-header">
+                        <img class="mr-2" width="40" height="40"
+                            src='https://avataaars.io/?avatarStyle=Circle&topType=ShortHairShortWaved&accessoriesType=Blank&hairColor=Platinum&facialHairType=Blank&clotheType=BlazerSweater&clotheColor=Gray02&eyeType=Close&eyebrowType=Angry&mouthType=ScreamOpen&skinColor=Tanned' />
+                        <strong class="mr-auto">Donald Trump</strong>
+                        <small class="text-muted">10 seconds ago</small>
+
+                    </div>
+                    <div class="toast-body">
+                        <p>Best site ever!</p>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class=" col-10 col-sm-6 col-md-4">
+
+                <div class="toast mt-2 scale-in-hor-center_d2" id="toast5" role="alert" aria-live="assertive" aria-atomic="true"
+                    data-autohide="false">
+                    <div class="toast-header">
+                        <img class="mr-2" width="40"
+                            src='https://avataaars.io/?avatarStyle=Circle&topType=ShortHairShortRound&accessoriesType=Blank&hairColor=Black&facialHairType=Blank&clotheType=Hoodie&clotheColor=Blue03&eyeType=Surprised&eyebrowType=Angry&mouthType=Twinkle&skinColor=Tanned' />
+                        <strong class="mr-auto">Kevin Vanaerschodt</strong>
+                        <small class="text-muted">5 seconds ago</small>
+
+                    </div>
+                    <div class="toast-body">
+                        <p>
+                            You guys are the best!!
+                        </p>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Nieuwe Review</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="username">@</span>
+                                </div>
+                                <input type="text" class="form-control" placeholder="Usernaam of Naam"
+                                    aria-label="Username" aria-describedby="username">
+                            </div>
+
+                            <div class="input-group mb-3">
+                                <div class="custom-file">
+                                    <input type="file" class="custom-file-input" id="avatarupload">
+                                    <label class="custom-file-label" for="avatarupload"
+                                        aria-describedby="avatarupload">Kies
+                                        je eigen avatar</label>
+                                </div>
+                                <div class="input-group-append">
+                                    <span class="input-group-text" id="avatarupload">Upload</span>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+
+                                <input type="email" name="email" id="email" class="form-control mb-3"
+                                    placeholder="E-mail">
+
+                                <textarea name="review" id="reviewarea" class="form-control" cols="30" rows="10"
+                                    placeholder="Schrijf hier je review">
+                                    </textarea>
+
+                                <span class="mr-3">Rating: </span><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star-half-alt"></i>
+                            </div>
+
+
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Terug</button>
+                        <button type="button" class="btn btn-primary">Stuur review!</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+
+    <script>
+        $(document).ready(
+            function () {
+
+                $('#toast1').toast('show');
+                $('#toast2').toast('show');
+                $('#toast3').toast('show');
+                $('#toast4').toast('show');
+                $('#toast5').toast('show');
+                $('#toast6').toast('show');
+
+
+            });
+    </script>
+</body>
+
+</html>

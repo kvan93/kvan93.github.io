@@ -24,39 +24,43 @@ $breakpoint_xL:1200px;
 
 html {
     scroll-behavior: smooth;
-  }
+}
 
 body {
     font-family: 'Fjalla One', sans-serif;
     font-size: 20px;
-  
+
 }
 
-.extra_marge{
+.extra_marge {
     padding-top: 20px;
 }
 
-.navbar{
-    
+.navbar {
+
     transition: background-color 200ms linear;
-  }
 
-  article p{
+    #HomeTab {
+        display: none;
+    }
+}
+
+article p {
     font-family: 'Playfair Display', serif;
-  }
+}
 
 
-@media (min-width: $breakpoint_medium){
+@media (min-width: $breakpoint_medium) {
     .navbar.scrolled {
         background-color: $oxford_blue !important;
         transition: background-color 200ms linear;
-      } 
+    }
 }
 
 
 
-@media (max-width: $breakpoint_small ){
-    body{
+@media (max-width: $breakpoint_small) {
+    body {
         background-image: url(../img/background_mobile.png);
         background-position: center;
         background-attachment: fixed;
@@ -64,9 +68,9 @@ body {
     }
 }
 
-#skills{
+#skills {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .parallax {
@@ -85,7 +89,7 @@ body {
     @media (max-width: $breakpoint_small) {
         &#profileparallax {
             background-image: none;
-            height: 120vh ;            
+            height: 120vh;
         }
 
         & .transparent_parallax {
@@ -128,6 +132,7 @@ body {
 
 
 #navigatie {
+
     li>a,
     div {
         color: $white;
@@ -136,12 +141,14 @@ body {
 
 
 h1,
-h2,h3,
+h2,
+h3,
 h4 {
     color: $CG_blue;
 }
 
 #contact {
+
     h1,
     h2,
     h4 {
@@ -159,9 +166,9 @@ footer {
 }
 
 div.card#ProfielCard {
-    border: none;    
+    border: none;
     color: black;
-    border-radius: $border_custom * 2 ;
+    border-radius: $border_custom * 2;
 
     div.border-bottom {
         border-bottom: 2px solid $CG_blue !important
@@ -201,30 +208,23 @@ div#Overmezelf {
     }
 
     img#profielfoto {
-        padding:10px;
-        border:2px solid $CG_blue;
-        background-color:$white;
-     }
-}
-
-
-
-div#project_carousel {
-    img {
-        height: 100vh;
+        padding: 10px;
+        border: 2px solid $CG_blue;
+        background-color: $white;
     }
 }
 
+
 @media (min-width: $breakpoint_medium) {
-    div#project_bg{
+    div#project_bg {
         background-image: url(../img/project_bg.png );
-     
+
         background-position: center;
-        background-size: 100vw 100vh ;
+        background-size: 100vw 100vh;
         background-attachment: fixed;
         background-repeat: no-repeat;
-        
-        
+
+
     }
 }
 
@@ -239,13 +239,23 @@ div#projecten {
 
     div.card.shadow-drop-2-tl {
         height: 300px;
-        
+
         border-radius: $border_custom;
     }
 
-    .collapse div.card{
-        
+    .collapse div.card {
+
         border-radius: $border_custom;
+
+        a.btn{
+            background-color: $CG_blue;
+            border-color: $CG_blue;
+        }
+
+        a.btn:hover{
+            background-color: $Royal_blue_dark;
+            border-color: $oxford_blue;
+        }
     }
 
     .shadow-drop-2-tl {
@@ -266,17 +276,18 @@ div#projecten {
             @media (min-width: $breakpoint_medium) {
                 &#card3 {
                     @include import_image("../img/travelbird.png");
-    
+
                 }
-    
+
                 &#card4 {
                     @include import_image("../img/Portfolio.png");
-    
+
                 }
             }
-            
+
 
             @media (min-width: $breakpoint_medium) {
+
                 &#card1,
                 &#card2,
                 &#card3,
@@ -290,20 +301,24 @@ div#projecten {
                     display: none;
                 }
             }
+
             @media (max-width: $breakpoint_Large) {
-                &#card3{
+                &#card3 {
                     @include import_image("../img/travelbird_sm.png");
                 }
-                &#card4{
+
+                &#card4 {
                     @include import_image("../img/portfolio_sm.png");
-                    & .card-body{
+
+                    & .card-body {
                         color: #FEFCFB;
                     }
-                    & .tech{
+
+                    & .tech {
                         display: none;
                     }
                 }
-           
+
             }
         }
 

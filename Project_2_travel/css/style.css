@@ -1,0 +1,356 @@
+body {
+    font-family: 'Open Sans', sans-serif !important;
+    background-color: #f1f1f1;
+}
+
+#parallax {
+    background-image: url("../img/travel.gif");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+}
+
+blockquote.quote {
+    color: #476573;
+    /* color: white;*/
+}
+
+footer,
+nav.navbar a {
+    font-size: 1rem;
+}
+
+div.card-deck {
+    font-size: 0.8rem;
+}
+
+.card {
+    height: 250px;
+    font-size: 1rem;
+}
+
+#socialMediaBar {
+    position: fixed;
+    right: 0;
+    top: 25%;    
+}
+
+#Homebar {
+    position: fixed;
+    right: 10px;
+    bottom: 20px;    
+}
+
+.tilt-in-fwd-tr {
+    animation: tilt-in-fwd-tr;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+}
+
+
+#card1 {
+    background-image: url(../img/oostenrijk.JPG);
+    background-position: center;
+    background-size: cover;
+}
+
+#card2 {
+    background-image: url(../img/Luxemburg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#card3 {
+    background-image: url(../img/slovenië.JPG);
+    background-position: left;
+    background-size: cover;
+}
+
+#card4 {
+    background-image: url(../img/Spanje.JPG);
+    background-position: left;
+    background-size: cover;
+}
+
+#card5 {
+    background-image: url(../img/India.jpg);
+    background-position: left;
+    background-size: cover;
+}
+
+#card8 {
+    background-image: url(../img/Rome.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#card9 {
+    background-image: url(../img/België.JPG);
+    background-position: left;
+    background-size: cover;
+}
+
+#card10 {
+    background-image: url(../img/Nederland.JPG);
+    background-position: center;
+    background-size: cover;
+}
+
+#card11 {
+    background-image: url(../img/Portugal.JPG);
+    background-position: center;
+    background-size: cover;
+}
+
+#nieuwsbrief {
+    height: 150px;
+    background-image: url(../img/Nieuwsbrief.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.blokje {
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    background-size: cover;
+    background-position: center;
+}
+
+#opel {
+    background-image: url(../img/opel.png);
+}
+
+#bmw {
+    background-image: url(../img/bmw.png);
+}
+
+#maserati {
+    background-image: url(../img/maseratie.png);
+}
+
+#renault {
+    background-image: url(../img/renault.jpg);
+}
+
+#mini {
+    background-image: url(../img/mini.png);
+}
+
+#tesla {
+    background-image: url(../img/tesla.png);
+}
+
+#porsche {
+    background-image: url(../img/porshe.png);
+}
+
+table thead,
+table tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+
+tbody {
+
+    height: 500px;
+    overflow: auto;
+}
+
+body#auto {
+    background-image: url(../img/auto_bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#autolijst{
+    background-color: rgb(255, 255, 255, 0.9);
+}
+
+
+
+#vliegform {
+    height: 450px;
+    width: 100%;
+    background: url(../img/vliegbackground.jpg);
+    background-position: bottom;
+    background-size: cover;
+}
+
+#vliegform div.card {
+    background-color: rgb(255, 255, 255, 0.75);
+    font-size: 0.8rem;
+}
+
+
+#reviews {
+    background: url(../img/reviewsbg.JPG);
+    background-position: center;
+    background-size: cover;
+}
+
+/* Media quotes */
+@media (max-width: 992px) {
+    .blokje {
+        width: 75px;
+        height: 75px;
+    }
+
+    #vliegform {
+        height: 600px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    #parallax {
+        background-color: #8C92AC;
+        background-image: none;
+    }
+
+    blockquote.quote {
+        color: white;
+    }
+
+    #vliegform {
+        height: 600px;
+    }
+
+    .blokje {
+        width: 50px;
+        height: 50px;
+        font-size: 0.5em;
+
+    }
+}
+
+/*  animations */
+
+.shadow-drop-2-tl:hover {
+    -webkit-animation: shadow-drop-2-tl 0.75s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: shadow-drop-2-tl 0.75s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+
+}
+
+.shadow-drop-2-tl span.lijntje{
+    position: relative;
+}
+
+.zwart{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0,0);    
+}
+
+.shadow-drop-2-tl:hover .zwart{
+    background-color: rgba(0, 0, 0,0.75);    
+}
+
+.shadow-drop-2-tl span.lijntje:before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    right: 0;
+  
+    background-color: #fff;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.shadow-drop-2-tl:hover span.lijntje:before{
+    visibility: visible;
+    width: 100%;
+}
+
+small.plaats{
+   color: rgb(255, 255, 255, 0);
+   transition: all 0.5s linear;
+}
+.shadow-drop-2-tl:hover  small.plaats{
+    color: rgb(255, 255, 255, 1);
+}
+
+
+
+.scale-in-hor-center {
+    -webkit-animation: scale-in-hor-center 0.75s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: scale-in-hor-center 0.75s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.scale-in-hor-center_d1 {
+    -webkit-animation: scale-in-hor-center 0.75s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: scale-in-hor-center 0.75s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation-delay: 0.75s;
+}
+
+.scale-in-hor-center_d2 {
+    -webkit-animation: scale-in-hor-center 0.75s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: scale-in-hor-center 0.75s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation-delay: 1.5s;
+}
+
+.scale-in-hor-center_d3 {
+    -webkit-animation: scale-in-hor-center 0.75s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: scale-in-hor-center 0.75s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation-delay: 2.25s;
+}
+
+.scale-in-hor-center_d4 {
+    -webkit-animation: scale-in-hor-center 0.75s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: scale-in-hor-center 0.75s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation-delay: 3s;
+}
+
+.scale-in-hor-center_d5 {
+    -webkit-animation: scale-in-hor-center 0.75s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: scale-in-hor-center 0.75s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation-delay: 3.75s;
+}
+
+.shadow-drop-2-center.active,
+.shadow-drop-2-center:hover{
+	-webkit-animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            background-color: white;
+            border: white;
+            color: black;
+}
+
+
+
+@media (max-width: 576px) {
+    #reviews {
+        background-color: #8C92AC;
+        ;
+        background-image: none;
+    }
+
+    #vliegform {
+        height: 700px;
+    }
+
+    .scale-in-hor-center_d4 {
+        animation-delay: .75s;
+    }
+
+    .scale-in-hor-center_d1 {
+        animation-delay: 1.5s;
+    }
+
+    .scale-in-hor-center_d5 {
+        animation-delay: 2.25s;
+    }
+
+    .scale-in-hor-center_d3 {
+        animation-delay: 3s;
+    }
+
+    .scale-in-hor-center_d2 {
+        animation-delay: 3.75s;
+    }
+}
