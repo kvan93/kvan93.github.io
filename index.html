@@ -31,7 +31,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
 
     <!--Animista-->
     <link rel="stylesheet" type="text/css" href="css/animista.css">
@@ -60,7 +60,7 @@
                         <li class="nav-item mx-2 " id="HomeTab">
                             <a class="nav-link" href="#profileparallax">HOME</a>
                         </li>
-                        
+
                         <li class="nav-item mx-2 ">
                             <a class="nav-link" href="#OverMezelf">ABOUT ME</a>
                         </li>
@@ -89,7 +89,7 @@
                         class=" img-fluid rounded-lg"></a>
 
                 <div class="d-none d-lg-inline-block navbar-text flex-grow-1 text-right flex-lg-grow-0 mx-2"
-                    data-toggle="tooltip" data-placement="bottom" title="Nothing is true, everything is permitted">Kevin 
+                    data-toggle="tooltip" data-placement="bottom" title="Nothing is true, everything is permitted">Kevin
                     Vanaerschodt
 
                 </div>
@@ -141,12 +141,20 @@
                                         <a href="file/CV_Kevin_Vanaerschodt.pdf" target="_blank"
                                             class="btn btn-outline-dark rounded-pill mx-2 px-4">CV</a>
                                     </div>
-                                    <div class="col-12 col-sm-4 text-center my-2">
-                                        <a href="mailto:kevin.vanaerschodt@gmail.com" target="_blank"
-                                            class="btn btn-outline-dark mx-2 px-4  rounded-pill">EMAIL</a>
+                                    <div class="col-12 col-sm-4 text-center my-2 ">
+                                        <a class="btn btn-outline-dark mx-2 px-4  rounded-pill"
+                                            href="Send Kevin some email (no spam please)" data-user="kevin.vanaerschodt"
+                                            data-client="gmail" data-extension="com"
+                                            onclick="window.location.href = 'mailto:' + this.dataset.user + '@' + this.dataset.client + '.' + this.dataset.extension; return false;"
+                                            target="_blank">EMAIL</a>
                                     </div>
                                     <div class="col-12 col-sm-4 text-center my-2">
-                                        <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=kevin.vanaerschodt@gmail.com" target="_blank"
+                                        <a href="Send Kevin some email via Gmail (no spam please)"
+                                            data-link="https://mail.google.com/mail/?" data-view="view=cm"
+                                            data-fs="fs=1" data-tf="tf=1" data-toUser="to=kevin.vanaerschodt"
+                                            data-client="gmail" data-extension="com"
+                                            onclick="window.location.href = this.dataset.link + this.dataset.view + '&' + this.dataset.fs + '&' + this.dataset.tf + '&' + this.dataset.toUser + '@' + this.dataset.client + '.' + this.dataset.extension; return false;"
+                                            target="_blank"
                                             class="btn btn-outline-dark mx-2 px-4  rounded-pill">GMAIL</a>
                                     </div>
                                 </div>
@@ -155,8 +163,7 @@
 
                                 <div class="row  ">
                                     <div class="col-12 col-sm-6 text-center my-2">
-                                        <a href="#Overmezelf"
-                                            class="btn btn-outline-dark rounded-pill  px-4 ">ABOUT</a>
+                                        <a href="#Overmezelf" class="btn btn-outline-dark rounded-pill  px-4 ">ABOUT</a>
                                     </div>
                                     <div class="col-12 col-sm-6 text-center my-2">
                                         <a href="#projecten"
@@ -164,8 +171,7 @@
                                     </div>
 
                                     <div class="col-12 text-center my-2 ">
-                                        <a href="#contact"
-                                            class="btn btn-outline-dark rounded-pill  px-4">CONTACT</a>
+                                        <a href="#contact" class="btn btn-outline-dark rounded-pill  px-4">CONTACT</a>
                                     </div>
                                 </div>
                             </div>
@@ -181,7 +187,7 @@
     </div>
 
     <div class="extra_marge" id="OverMezelf">
-         </div>
+    </div>
     <div id="Overmezelf">
         <div class="container-lg min-vh-100 mb-5 ">
             <div class="row h-100 justify-content-center align-items-center">
@@ -191,24 +197,28 @@
                             <article class="card-text text-justify ">
                                 <h1 class="card-title text-center pb-3">ABOUT ME</h1>
                                 <p class="font-weight-bold">
-                                    I'm a Web/Mobile app developer living in Aarschot with a background in nanoegineering and chemistry and I'm currently in training as a
-                                    hybrid app developer until April 2021. In this course we will learn the basic front-end
+                                    I'm a Web/Mobile app developer living in Aarschot with a background in
+                                    nanoegineering and chemistry and I'm currently in training as a
+                                    hybrid app developer until April 2021. In this course we will learn the basic
+                                    front-end
                                     technologies such as Bootstrap, HTML, CSS, SASS and Javascript. Later we will learn
                                     to develop in Angular, Ionic framework for mobile applications and connecting to a
-                                    NoSQL Database with Firebase. When I have some spare time, I'm also learning React via an online course provided by Udemy. 
+                                    NoSQL Database with Firebase. When I have some spare time, I'm also learning React
+                                    via an online course provided by Udemy.
                                     At the moment I'm looking for a job or internship where I can further develop my
-                                    experience with these technologies. 
+                                    experience with these technologies.
                                 </p>
                                 <p class="font-weight-bold">
-                                    On Tuesday evenings, I also follow a postgraduate on esport business at the PXL in Hasselt.
+                                    On Tuesday evenings, I also follow a postgraduate on esport business at the PXL in
+                                    Hasselt.
                                     During this course we are digging deeper into the world of competitive gaming by
                                     follow lectures given by esports experts. The range of topics include not only
                                     gaming, but also team coaching, brand exposure, hardware, social media and many
                                     more.
                                 </p>
-                                
+
                                 <p class="font-weight-bold">
-                                    My hobbies are theatre, indoor soccer (goalkeeper), cycling and casual gaming. 
+                                    My hobbies are theatre, indoor soccer (goalkeeper), cycling and casual gaming.
                                 </p>
                             </article>
                         </div>
@@ -238,7 +248,8 @@
                     <div class="card border-0 m-5 bg-transparent" id="intro">
                         <div class="card-body">
                             <p>
-                                Below is an overview of the most important projects or jobs I've been working on in my career. To receive
+                                Below is an overview of the most important projects or jobs I've been working on in my
+                                career. To receive
                                 more
                                 info on
                                 each project/job, you can click on them.
@@ -247,9 +258,9 @@
                     </div>
                 </div>
             </div>
-           <div class="extra_marge" id="linkproject1">
+            <div class="extra_marge" id="linkproject1">
 
-           </div>
+            </div>
             <div class="row m-0 m-md-5 text-white text-right">
                 <div class="col-12 my-3">
                     <div class="card border-0 shadow-drop-2-tl " id="card1">
@@ -470,8 +481,9 @@
                         </div>
                         <div class="row ">
                             <div class="col my-3 mx-auto text-center">
-                                
-                                <a href="/Project_2_travel/index.html" class="btn btn-primary rounded-pill  mx-auto px-4" target="_blank">DEMO</a>
+
+                                <a href="/Project_2_travel/index.html"
+                                    class="btn btn-primary rounded-pill  mx-auto px-4" target="_blank">DEMO</a>
 
                             </div>
                         </div>
@@ -574,12 +586,15 @@
                 </div>
                 <div class="col-12 col-lg-6 py-5 text-center">
                     <h2>Contact Me</h2>
-                    <a href="mailto:kevin.vanaerschodt@gmail.com" target="_blank"
-                        class="btn btn-outline-light m-3">Email
-                        me</a>
-                    <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=kevin.vanaerschodt@gmail.com" target="_blank"
-                        class="btn btn-outline-light m-3">Gmail
-                        me</a>
+                    <a href="Send Kevin some email (no spam please)" class="btn btn-outline-light m-3" data-user="kevin.vanaerschodt" data-client="gmail"
+                        data-extension="com"
+                        onclick="window.location.href = 'mailto:' + this.dataset.user + '@' + this.dataset.client + '.' + this.dataset.extension; return false;"
+                        target="_blank">Email me</a>
+                    <a href="Send Kevin some email via Gmail (no spam please)"
+                        data-link="https://mail.google.com/mail/?" data-view="view=cm" data-fs="fs=1" data-tf="tf=1"
+                        data-toUser="to=kevin.vanaerschodt" data-client="gmail" data-extension="com"
+                        onclick="window.location.href = this.dataset.link + this.dataset.view + '&' + this.dataset.fs + '&' + this.dataset.tf + '&' + this.dataset.toUser + '@' + this.dataset.client + '.' + this.dataset.extension; return false;"
+                        target="_blank" class="btn btn-outline-light m-3">Gmail me</a>
                 </div>
             </div>
 
