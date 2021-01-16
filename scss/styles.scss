@@ -5,6 +5,15 @@ $Royal_blue_dark: #001F54;
 $Indigo_dye: #034078;
 $CG_blue: #1282A2;
 $white: #FEFCFB;
+$html5_col: #f16524;
+$css3_col: #2862e9;
+$bs_col:#563d7c;
+$sass_col: #c66192;
+$git_col: #eb4d28;
+$gulp_col:#d34446;
+$react_col: #61dafb;
+$angular_col: #d6002f;
+$js_col: #f5d33c;
 
 $border_custom: 15px;
 $breakpoint_small:576px;
@@ -18,6 +27,12 @@ $breakpoint_xL:1200px;
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+//extend
+
+%hover-icon{
+    transition: 1s;
 }
 
 // SASS
@@ -184,6 +199,49 @@ div.card#ProfielCard {
         &:hover {
             background-color: $Indigo_dye;
         }
+    }
+
+    i.fab{
+        @extend %hover-icon;
+    }
+   
+    i.html5:hover{
+       @extend %hover-icon;
+       color: $html5_col;
+    }
+    i.css3:hover{
+       @extend %hover-icon;
+       color: $css3_col;
+    }
+    i.bootstrap:hover{
+       @extend %hover-icon;
+       color: $bs_col;
+    }
+    i.sass:hover{
+       @extend %hover-icon;
+       color: $sass_col;
+    }
+
+    i.js:hover{
+       @extend %hover-icon;
+       color: $js_col;
+    }
+
+    i.git:hover{
+       @extend %hover-icon;
+       color: $git_col;
+    }
+    i.gulp:hover{
+       @extend %hover-icon;
+       color: $gulp_col;
+    }
+    i.angular:hover{
+       @extend %hover-icon;
+       color: $angular_col;
+    }
+    i.react:hover{
+       @extend %hover-icon;
+       color: $react_col;
     }
 }
 
