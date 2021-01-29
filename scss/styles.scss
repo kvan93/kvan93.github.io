@@ -30,8 +30,7 @@ $breakpoint_xL:1200px;
 }
 
 //extend
-
-%hover-icon{
+%hover-icon {
     transition: 1s;
 }
 
@@ -52,7 +51,6 @@ body {
 }
 
 .navbar {
-
     transition: background-color 200ms linear;
 
     #HomeTab {
@@ -71,8 +69,6 @@ article p {
         transition: background-color 200ms linear;
     }
 }
-
-
 
 @media (max-width: $breakpoint_small) {
     body {
@@ -201,47 +197,53 @@ div.card#ProfielCard {
         }
     }
 
-    i.fab{
+    i.fab {
         @extend %hover-icon;
     }
-   
-    i.html5:hover{
-       @extend %hover-icon;
-       color: $html5_col;
-    }
-    i.css3:hover{
-       @extend %hover-icon;
-       color: $css3_col;
-    }
-    i.bootstrap:hover{
-       @extend %hover-icon;
-       color: $bs_col;
-    }
-    i.sass:hover{
-       @extend %hover-icon;
-       color: $sass_col;
+
+    i.html5:hover {
+        @extend %hover-icon;
+        color: $html5_col;
     }
 
-    i.js:hover{
-       @extend %hover-icon;
-       color: $js_col;
+    i.css3:hover {
+        @extend %hover-icon;
+        color: $css3_col;
     }
 
-    i.git:hover{
-       @extend %hover-icon;
-       color: $git_col;
+    i.bootstrap:hover {
+        @extend %hover-icon;
+        color: $bs_col;
     }
-    i.gulp:hover{
-       @extend %hover-icon;
-       color: $gulp_col;
+
+    i.sass:hover {
+        @extend %hover-icon;
+        color: $sass_col;
     }
-    i.angular:hover{
-       @extend %hover-icon;
-       color: $angular_col;
+
+    i.js:hover {
+        @extend %hover-icon;
+        color: $js_col;
     }
-    i.react:hover{
-       @extend %hover-icon;
-       color: $react_col;
+
+    i.git:hover {
+        @extend %hover-icon;
+        color: $git_col;
+    }
+
+    i.gulp:hover {
+        @extend %hover-icon;
+        color: $gulp_col;
+    }
+
+    i.angular:hover {
+        @extend %hover-icon;
+        color: $angular_col;
+    }
+
+    i.react:hover {
+        @extend %hover-icon;
+        color: $react_col;
     }
 }
 
@@ -286,8 +288,6 @@ div#Overmezelf {
     }
 }
 
-
-
 div#projecten {
 
     #intro {
@@ -305,12 +305,12 @@ div#projecten {
 
         border-radius: $border_custom;
 
-        a.btn{
+        a.btn {
             background-color: $CG_blue;
             border-color: $CG_blue;
         }
 
-        a.btn:hover{
+        a.btn:hover {
             background-color: $Royal_blue_dark;
             border-color: $oxford_blue;
         }
@@ -329,6 +329,9 @@ div#projecten {
             &#card2 {
                 @include import_image("../img/Cs50x.png");
 
+            }
+            &#card5{
+                @include import_image("../img/angular5.png");
             }
 
             @media (min-width: $breakpoint_medium) {
@@ -349,7 +352,8 @@ div#projecten {
                 &#card1,
                 &#card2,
                 &#card3,
-                &#card4 {
+                &#card4,
+                &#card5 {
                     background-position: left;
                 }
             }
@@ -380,6 +384,7 @@ div#projecten {
             }
         }
 
+        // Lijntje on hover
         span.project {
             position: relative;
             font-size: 1.5rem;
