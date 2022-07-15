@@ -13,12 +13,24 @@ const LandingPage = (props: any) => {
 					<p className="text-white text-center font-RobotoSlab text-3xl my-3 animate__fadeInUp animate__delay-2s animate__animated animate__slow ">Front-end developer met .NET achtergrond</p>
 				</div>
 				<div className="flex flex-row my-3 gap-6 animate__fadeInUp animate__animated animate__slow animate__delay-5s">
-					<FaFacebook size={'3em'} className="fill-white stroke-red-400 text-lg transition"></FaFacebook>
-					<FaLinkedin size={'3em'} className="fill-white stroke-red-400 text-lg"></FaLinkedin>
-					<FaGithub size={'3em'} className="fill-white stroke-red-400 text-lg"></FaGithub>
-					<FaInstagram size={'3em'} className="fill-white stroke-red-400 text-lg"></FaInstagram>
-					<FaTwitter size={'3em'} className="fill-white stroke-red-400 text-lg"></FaTwitter>
-					<FaDiscord size={'3em'} className="fill-white stroke-red-400 text-lg"></FaDiscord>
+					<a href="https://www.facebook.com/kevin.vanaerschodt/" target={'_blank'}  >
+						<FaFacebook size={'3em'} className="fill-white stroke-red-400 text-lg transition"></FaFacebook>
+					</a>
+					<a href="https://www.linkedin.com/in/kevin-vanaerschodt/" target={'_blank'} >
+						<FaLinkedin size={'3em'} className="fill-white stroke-red-400 text-lg"></FaLinkedin>
+					</a>
+					<a href="https://github.com/kvan93" target={'_blank'} >
+						<FaGithub size={'3em'} className="fill-white stroke-red-400 text-lg"></FaGithub>
+					</a>
+					<a href="https://www.instagram.com/sionyx93/" target={'_blank'} >
+						<FaInstagram size={'3em'} className="fill-white stroke-red-400 text-lg"></FaInstagram>
+					</a>
+					<a href="https://twitter.com/sionyx93" target={'_blank'} >
+						<FaTwitter size={'3em'} className="fill-white stroke-red-400 text-lg"></FaTwitter>
+					</a>
+					<a href="https://discordapp.com/users/771284741403836416" target={'_blank'} >
+						<FaDiscord size={'3em'} className="fill-white stroke-red-400 text-lg"></FaDiscord>
+					</a>
 				</div>
 			</div>
 		</div>
